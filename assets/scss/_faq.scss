@@ -1,79 +1,113 @@
-.faq-image {
-    margin-top: 30px;
-    
-    img {
-        @include imgw;
-        border-radius: 12px;
-    }
-}
+.faq-wrapper {
+    .faq-content {
+        .faq-list {
+            @include flex;
+            gap: 25px;
+            margin-top: 40px;
+            border-top: 1px solid #CCD8FF;
+            border-bottom: 1px solid #CCD8FF;
+            padding: 30px 0;
 
-.faq-content {
-    margin-top: 30px;
+            li {
+                i {
+                    margin-right: 5px;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
 
     .accordion-item {
-        border: none !important;
-        background-color: $bg-color;
-        margin-bottom: 20px;
+        border: 0;
+        background-color: $white;
 
         .accordion-header { 
             .accordion-button { 
-                font-weight: 400;
-                color: $header-color;
-                border: none !important;
+                font-weight: 600;
+                color: $theme-color;
+                letter-spacing: -.2px;
+                border: 0;
                 border-radius: 0;
                 box-shadow: none;
-                background-color:$bg-color;
-                padding: 30px 30px 0;
+                background-color: $white;
+                padding: 25px 30px 0;
                 text-transform: capitalize;
-                font-size: 18px;
-                font-family: $body-font;
+                font-size: 22px;
+                border: 1px solid $border-color;
+                border: 1px solid transparent;
+                box-shadow: 12px -12px 24px 0px rgba(0, 0, 0, 0.06);
 
                 @include breakpoint (max-sm){
                     font-size: 18px;
-                    padding: 20px 20px 0;
-                }
-
-                span {
-                    margin-right: 20px;
                 }
 
                 &::after {
-                    content: "\f324";
-                    font-family: $fa;
-                    background: transparent;
+                    // content: "\2b";
+                    // font-family: "Font Awesome 6 Free";
+                    // background: transparent;
                     font-weight: 500;
                     transition: all 0.3s ease-in-out !important;
-                    color: $header-color;
-                    font-size: 16px;
+                    background-image: url(../../assets/img/chevron-right.svg);
+                    color: $theme-color;
                 }
                 &:not(.collapsed)::after {
-                    content: "\f325";
-                    font-family: $fa;
-                    background: transparent;
+                    // content: "\f068";
+                    // font-family: "Font Awesome 6 Free";
+                    // background: transparent;
+                    background-image: url(../../assets/img/chevron-down.svg);
                     font-weight: 500;
                     color: $theme-color;
+                    transform: rotate(0);
                 }
 
                 &.collapsed {
-                    border: 1px solid #F4F6FA;
+                    background-color: $white;
+                    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
                     padding: 25px 30px;
                     color: $header-color;
-                    background-color: $bg-color;
                 }
+              
             }
         }
 
         .accordion-collapse { 
 
             .accordion-body {
+                padding-right: 20px;
                 padding-left: 30px;
-                padding-top: 25px;
+                padding-top: 15px;
                 color: $text-color;
-                background-color: $bg-color;
-                padding-bottom: 28px;
-                font-size: 16px;
-                font-weight: 300;
+                background-color: $white;
+                box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+
+                @include breakpoint (max-xxl){
+                    padding-right: 50px;
+                }
+
+                @include breakpoint (max-lg){
+                    padding-right: 30px;
+                }
             }
+        }
+    }
+}
+
+.faq-section {
+    position: relative;
+
+    .faq-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .faq-shape {
+        position: absolute;
+        bottom: -31%;
+        right: 0;
+
+        @include breakpoint (max-xxl){
+            display: none;
         }
     }
 }

@@ -1,293 +1,436 @@
 .about-wrapper {
-    .about-image-items {
-        margin-bottom: 137px;
+    margin-top: 155px;
 
-        @include breakpoint (max-xl){
-            margin-bottom: 0;
-        }
+    @include breakpoint (max-xl4){
+      margin-top: 0;
+    }
 
-        .about-img {
-            max-width: 475px;
-            position: relative;
+    .about-image {
+        position: relative;
+        text-align: center;
+        z-index: 2;
 
-            @include breakpoint (max-xl){
-               max-width: 700px;
-            }
+        @include breakpoint (max-sm){
+            max-width: 400px;
 
             img {
                 @include imgw;
-                border-radius: 12px;
+                object-fit: cover;
             }
+        }
 
-            .about-image-2 {
-                max-width: 330px;
-                position: absolute;
-                bottom: -138px;
-                right: -118px;
+        .bg-shape {
+            position: absolute;
+            bottom: 0;;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
 
-                @include breakpoint (max-xxl){
-                    right: -50px;
-                }
-
-                @include breakpoint (max-xl){
-                    right: 0;
-                    bottom: 0;
-                }
-
-                @include breakpoint (max-md){
-                   max-width: 230px
-                }
-
-                @include breakpoint (max-sm){
-                    max-width: 180px
-                }
-
+            @include breakpoint (max-sm){
                 img {
                     @include imgw;
-                    border-radius: 12px;
                 }
+            }
+        }
+
+        .grap-shape {
+            position: absolute;
+            bottom: 40px;
+            left: 35px;
+
+            @include breakpoint (max-sm){
+                display: none;
+            }
+        }
+
+        .box-shape {
+            position: absolute;
+            right: 25px;
+            top: 32%;
+            @include breakpoint (max-sm){
+                display: none;
+            }
+        }
+
+        .emoji-shape {
+            position: absolute;
+            top: 20%;
+            left: 164px;
+            animation: bounce-x 7s infinite linear;
+
+            @include breakpoint (max-sm){
+                display: none;
             }
         }
     }
 
     .about-content {
-        .list-area {
-            @include flex;
-            justify-content: space-between;
-            margin-top: 35px;
+        margin-left: 10px;
 
-            @include breakpoint (max-xl){
-               flex-wrap: wrap;
-               gap: 20px;
-            }
-
-            ul {
-                li {
-                    color: $header-color;
-                    font-size: 16px;
-
-                    &:not(:last-child){
-                        margin-bottom: 15px;
-                    }
-
-                    i {
-                        color: $theme-color;
-                        font-size: 20px;
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
-
-        .about-author {
+        .circle-progress-bar-wrapper {
             @include flex;
             gap: 30px;
             margin-top: 50px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
 
-            @include breakpoint (max-xl){
-                flex-wrap: wrap;
+            @include breakpoint (max-xxl){
+                gap: 30px;
             }
 
-            @include breakpoint (max-md){
-               margin-top: 30px;
+            @include breakpoint (max-lg){
+                margin-top: 40px;
+                gap: 70px;
+            }
+
+            @include breakpoint (max-lg){
+                gap: 20px;
             }
 
             @include breakpoint (max-sm){
-                margin-top: 20px;
+                margin-top: 30px;
+                flex-wrap: wrap;
+                gap: 10px;
             }
-
-            .author-icon {
+           
+            .single-circle-bar{
                 @include flex;
-                gap: 20px;
-
-                .icon {
-                    width: 54px;
-                    height: 54px;
-                    line-height: 54px;
-                    text-align: center;
-                    background-color: transparent;
-                    text-align: center;
-                    color: $theme-color;
-                    border-radius: 50%;
-                    position: relative;
-                    border: 1px solid $theme-color;
+                gap: 10px;
+                
+                span {
+                    font-size: 16px;
+                    line-height: 1;
+                    font-weight: 700;
                 }
+                .content{
+                    h6{
+                        display: block;
+                        margin-bottom: 0;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 135%;
+                    }
 
-                .content {
-                    h5 {
-                        font-size: 20px;
-                        font-weight: 500;
-
-                        a {
-                            color: $header-color;
+                    br {
+                        @include breakpoint (max-sm){
+                            display: block;
                         }
                     }
-
-                    span {
-                        font-size: 18px;
-                        font-weight: 400;
-                        color: $text-color;
-                        font-family: $heading-font;
-                        margin-bottom: 10px;
-                        display: inline-block;
-                    }
+                }
+                .circle-bar {
+                    position: relative;
+                    height: 120px;
+                    width: 120px;
+                }
+                    
+                .circle-bar div {
+                    position: absolute;
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                }
+                    
+                .circle-bar div span {
+                    position: absolute;
+                    font-size: 20px;
+                    line-height: 92px;
+                    height: 90px;
+                    width: 90px;
+                    left: 5px;
+                    top: 5px;
+                    font-weight: 600;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: $bg-color;
+                    color: $header-color;
+                }
+                    
+                .circle-bar .background {
+                    background-color: #DFE2FF !important;
+                }
+                
+                .circle-bar .rotate {
+                    clip: rect(0 50px 100px 0);
+                    background-color: $theme-color !important;
+                }
+                
+                .circle-bar .left {
+                    clip: rect(0 50px 100px 0);
+                    opacity: 1;
+                    background-color: $bg-color !important;
+                }
+                
+                .circle-bar .right {
+                    clip: rect(0 50px 100px 0);
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    opacity: 0;
+                    background-color: $theme-color !important;
                 }
             }
         }
     }
 }
 
-.about-wrapper-2 {
-    .about-image-items {
-        position: relative;
+.about-section {
+    background-repeat: no-repeat;
+    position: relative;
 
-        .about-image {
-            max-width: 391px;
-            position: relative;
+    @include breakpoint (max-xl4){
+        background-color: $bg-color;
+    }
 
-            @include breakpoint (max-xl){
-                max-width: 600px
-            }
+    .brand-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        z-index: 9;
+        max-width: 1200px;
 
-            img {
-                @include imgw;
-                border-radius: 12px;
-            }
-
-            .about-image-2 {
-                position: absolute;
-                bottom: -90px;
-                right: -180px;
-
-                @include breakpoint (max-xxl){
-                    right: -130px;
-                }
-
-                @include breakpoint (max-xl){
-                    right: 0;
-                    bottom: 0;
-                }
-
-                @include breakpoint (max-sm){
-                   max-width: 200px;
-                }
-            }
+        @include breakpoint (max-xl4){
+            max-width: initial;
+            position: static;
+            transform: initial;
+            margin-bottom: 120px;
         }
 
-        .counter-content {
-            background-color: $theme-color;
+        @include breakpoint (max-xl){
+            margin-bottom: 100px;
+        }
+
+        @include breakpoint (max-lg){
+            margin-bottom: 80px;
+        }
+
+        .brand-title {
             text-align: center;
-            padding: 55px 20px;
-            border-radius: 12px;
-            position: absolute;
-            top: 0;
-            right: 60px;
+            margin-bottom: 30px;
+            position: relative;
 
-            @include breakpoint (max-xl){
-                left: 0;
-                right: initial;
+            &::before {
+                position: absolute;
+                top: 15px;
+                left: 5%;
+                content: "";
+                height: 1px;
+                width: 413px;
+                background-color: #E5E5E5;
+    
+                @include breakpoint (max-xxl){
+                    display: none;
+                }
             }
-
-            h2 {
-                font-size: 40px;
-                font-weight: 700;
-                color: $white;
-            }
-
-            p {
-                color: $white;
-                font-size: 16px;
+    
+            &::after {
+                position: absolute;
+                top: 15px;
+                right: 5%;
+                content: "";
+                height: 1px;
+                width: 413px;
+                background-color: #E5E5E5;
+    
+                @include breakpoint (max-xxl){
+                    display: none;
+                }
             }
         }
     }
-    .about-content {
-        .text {
-           margin-bottom: 30px;
+
+    .left-shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+}
+
+.about-wrapper-2 {
+    .about-image {
+        max-width: 537px;
+        margin-left: 100px;
+        position: relative;
+        
+        @include breakpoint (max-xl){
+            margin-left: 0;
         }
 
-        .tab-items {
-            margin-top: 30px;
-            border-top: 1px solid #E4E4E4;
-            padding-top: 35px;
-        }
+        img {
+            border-radius: 300px 300px 0 0;
 
-        .nav {
-            @include flex;
-            background: rgba(67, 118, 251, 0.06);
-            justify-content: space-between;
-            margin-bottom: 30px;
-           
-           // margin-top: 30px;
-
-            .nav-item {
-                .nav-link {
-                    font-size: 20px;
-                    font-weight: 400;
-                    color: $text-color;
-                    padding: 14px 30px;
-
-                    &.active {
-                        background: $theme-color;
-                        color: $white;
-                    }
-                }
+            @include breakpoint (max-xxl){
+                @include imgw;
             }
         }
 
-        .about-author {
-            @include flex;
-            gap: 30px;
-            margin-top: 50px;
+        .box-shape {
+            position: absolute;
+            top: 15%;
+            left: -22%;
 
             @include breakpoint (max-xl){
-                flex-wrap: wrap;
+                display: none;
             }
 
-            @include breakpoint (max-md){
-               margin-top: 30px;
+            @include breakpoint (max-lg){
+                display: block;
             }
 
             @include breakpoint (max-sm){
-                margin-top: 20px;
+               display: none;
+            }
+        }
+
+        .gap-shape {
+            position: absolute;
+            right: -35%;
+            bottom: -30px;
+
+            @include breakpoint (max-xxl){
+                right: -20%;
             }
 
-            .author-icon {
-                @include flex;
-                gap: 20px;
+            @include breakpoint (max-xl){
+                display: none;
+            }
+
+            @include breakpoint (max-lg){
+                display: block;
+            }
+
+
+            @include breakpoint (max-sm){
+                display: none;
+            }
+        }
+
+        .circle-button {
+            position: absolute;
+            right: 0;
+            top: 5%;
+            width: 122px;
+            height: 122px;
+            line-height: 122px;
+            background-color: #FD8128;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 24px;
+            color: $white;
+            z-index: 99;
+    
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border: 20px solid rgba(255, 255, 255, 0.20);
+                width: 148px;
+                height: 148px;
+                content: "";
+                border-radius: 50%;
+                z-index: 1;
+            }
+    
+            .text-circle {
+                position: absolute;
+                top: 1%;
+                left: 8%;
+                animation: cir36 10s linear infinite;
+                z-index: 9;
+            }
+       }
+    }
+
+    .about-content {
+        margin-left: 80px;
+        position: relative;
+        z-index: 3;
+
+        @include breakpoint (max-xxl){
+            margin-left: 40px;
+        }
+
+        @include breakpoint (max-xl){
+            margin-left: 0;
+        }
+
+        .icon-items-area {
+            margin-top: 40px;
+            @include flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            @include breakpoint (max-xl){
+               flex-wrap: wrap;
+               gap: 25px;
+            }
+
+            .icon-items {
+                max-width: 270px;
 
                 .icon {
-                    width: 54px;
-                    height: 54px;
-                    line-height: 54px;
+                    border-radius: 8px;
+                    border: 1px solid #D4DCFF;
+                    background: #F3F7FB;
                     text-align: center;
-                    background-color: transparent;
+                    width: 70px;
+                    height: 70px;
+                    line-height: 58px;
                     text-align: center;
-                    color: $theme-color;
-                    border-radius: 50%;
-                    position: relative;
-                    border: 1px solid $theme-color;
+                    display: inline-block;
+                    font-size: 40px;
+                    color: $white;
                 }
 
                 .content {
-                    h5 {
-                        font-size: 20px;
-                        font-weight: 500;
+                    margin-top: 20px;
 
-                        a {
-                            color: $header-color;
-                        }
-                    }
-
-                    span {
-                        font-size: 18px;
-                        font-weight: 400;
-                        color: $text-color;
-                        font-family: $heading-font;
+                    h3 {
                         margin-bottom: 10px;
-                        display: inline-block;
                     }
                 }
             }
+        }
+
+        .about-button {
+            @include flex;
+            gap: 30px;
+
+            @include breakpoint (max-sm){
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .link-btn {
+                font-size: 16px;
+                font-weight: 700;
+                display: inline-block;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.about-section-2 {
+    position: relative;
+
+    .bg-shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .right-shape {
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+
+        @include breakpoint (max-xxxl){
+            display: none;
         }
     }
 }

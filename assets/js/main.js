@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------
 
-Template Name: RevAuto - Car Dealer & Services Html Template
+Template Name: Digtek - Digital Marketing Agency Html Template
 Author:  Gramentheme
-Author URI: https://themeforest.net/user/gramentheme/portfolio
+Author URI: https://themeforest.net/user/Gramentheme/portfolio
 Version: 1.0.0
-Description: RevAuto - Car Dealer & Services Html Template<
+Description: Digtek - Digital Marketing Agency Html Template<
 
 -------------------------------------------------------------------
 CSS TABLE OF CONTENTS
@@ -89,45 +89,118 @@ CSS TABLE OF CONTENTS
         //>> Nice Select Start <<//
         $('select').niceSelect();
 
-        const heroSlider = new Swiper('.hero-slider', {
-            speed: 2500,
-            loop: true,
-            //slidesPerView: 1,
-            autoplay: true,
-            effect: 'fade',
-            // breakpoints: {
-            //     '1600': {
-            //         slidesPerView: 1,
-            //     },
-            //     '1400': {
-            //         slidesPerView: 1,
-            //     },
-            //     '1200': {
-            //         slidesPerView: 1,
-            //     },
-            //     '992': {
-            //         slidesPerView: 1,
-            //     },
-            //     '768': {
-            //         slidesPerView: 1,
-            //     },
-            //     '576': {
-            //         slidesPerView: 1,
-            //     },
-            //     '0': {
-            //         slidesPerView: 1,
-            //     },
-    
-                a11y: false,
-            // },
-            pagination: {
-                el: ".dot",
-                clickable: true,
-            },
-    
-        });
+        //>> Brand-slider Slider Start <<//
+        if($('.brand-slider').length > 0) {
+            const brandSlider = new Swiper(".brand-slider", {
+                spaceBetween: 30,
+                speed: 2000,
+                loop: true,
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+
+                breakpoints: {
+                    1199: {
+                        slidesPerView: 4,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                    },
+                    767: {
+                        slidesPerView: 2,
+                    },
+                    575: {
+                        slidesPerView: 2,
+                    },
+                    0: {
+                        slidesPerView: 1,
+                    },
+                },
+            });
+        }
 
         //>> Testimonial-slider Slider Start <<//
+        // if($('.brand-slider').length > 0) {
+        //     const brandSlider = new Swiper(".brand-slider", {
+        //         spaceBetween: 30,
+        //         speed: 2000,
+        //         loop: true,
+        //         autoplay: {
+        //             delay: 1000,
+        //             disableOnInteraction: false,
+        //         },
+        //         pagination: {
+        //             el: ".dots",
+        //             clickable: true,
+        //         },
+
+        //         navigation: {
+        //             nextEl: ".array-prev",
+        //             prevEl: ".array-next",
+        //         },
+
+        //         breakpoints: {
+        //             991: {
+        //                 slidesPerView: 4,
+        //             },
+        //             767: {
+        //                 slidesPerView: 3,
+        //             },
+        //             575: {
+        //                 slidesPerView: 2,
+        //             },
+        //             0: {
+        //                 slidesPerView: 1,
+        //             },
+        //         },
+        //     });
+        // }
+
+        //>> Project Slider Slider Start <<//
+        if($('.project-slider').length > 0) {
+            const projectSlider = new Swiper(".project-slider", {
+                spaceBetween: 30,
+                speed: 2000,
+                loop: true,
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    991: {
+                        slidesPerView: 3,
+                    },
+                    767: {
+                        slidesPerView: 2,
+                    },
+                    575: {
+                        slidesPerView: 1,
+                    },
+                    0: {
+                        slidesPerView: 1,
+                    },
+                },
+            });
+        }
+
+        //>> Project Hover Image Show Slider Start <<//
+        const caseStudiesItems = document.querySelectorAll(".case-studies-items");
+
+        function followImageCursor(event, caseStudiesItems) {
+            const contentBox = caseStudiesItems.getBoundingClientRect();
+            const dx = event.clientX - contentBox.x;
+            const dy = event.clientY - contentBox.y;
+            caseStudiesItems.children[2].style.transform = `translate(${dx}px, ${dy}px) rotate(-12.317deg)`;
+        }
+        
+        caseStudiesItems.forEach((item, i) => {
+            item.addEventListener("mousemove", (event) => {
+                setInterval(followImageCursor(event, item), 1000);
+            });
+        });
+
+        //>> Testimonial Slider Start <<//
         if($('.testimonial-slider').length > 0) {
             const testimonialSlider = new Swiper(".testimonial-slider", {
                 spaceBetween: 30,
@@ -137,14 +210,16 @@ CSS TABLE OF CONTENTS
                     delay: 1000,
                     disableOnInteraction: false,
                 },
-                pagination: {
-                    el: ".dots",
-                    clickable: true,
+                navigation: {
+                    nextEl: ".array-prev",
+                    prevEl: ".array-next",
                 },
-
                 breakpoints: {
-                    991: {
+                    1199: {
                         slidesPerView: 2,
+                    },
+                    991: {
+                        slidesPerView: 1,
                     },
                     767: {
                         slidesPerView: 1,
@@ -168,26 +243,6 @@ CSS TABLE OF CONTENTS
                     delay: 1000,
                     disableOnInteraction: false,
                 },
-                breakpoints: {
-                    1399: {
-                        slidesPerView: 4,
-                    },
-                    1199: {
-                        slidesPerView: 3,
-                    },
-                    991: {
-                        slidesPerView: 2,
-                    },
-                    767: {
-                        slidesPerView: 2,
-                    },
-                    575: {
-                        slidesPerView: 1,
-                    },
-                    0: {
-                        slidesPerView: 1,
-                    },
-                },
             });
         }
 
@@ -200,30 +255,14 @@ CSS TABLE OF CONTENTS
                     delay: 1000,
                     disableOnInteraction: false,
                 },
-                breakpoints: {
-                    1399: {
-                        slidesPerView: 5,
-                    },
-                    1199: {
-                        slidesPerView: 3,
-                    },
-                    991: {
-                        slidesPerView: 2,
-                    },
-                    767: {
-                        slidesPerView: 2,
-                    },
-                    575: {
-                        slidesPerView: 1,
-                    },
-                    0: {
-                        slidesPerView: 1,
-                    },
+                navigation: {
+                    nextEl: ".array-prev",
+                    prevEl: ".array-next",
                 },
             });
         }
 
-        //>> Testimonial-slider Slider Start <<//
+        //>> Team Slider Start <<//
         if($('.team-slider').length > 0) {
             const teamSlider = new Swiper(".team-slider", {
                 spaceBetween: 30,
@@ -233,96 +272,22 @@ CSS TABLE OF CONTENTS
                     delay: 1000,
                     disableOnInteraction: false,
                 },
-                pagination: {
-                    el: ".dots",
-                    clickable: true,
-                },
-
-                breakpoints: {
-                    991: {
-                        slidesPerView: 2,
-                    },
-                    767: {
-                        slidesPerView: 1,
-                    },
-                    575: {
-                        slidesPerView: 1,
-                    },
-                    0: {
-                        slidesPerView: 1,
-                    },
-                },
-            });
-        }
-
-        //>> Brand Slider Start <<//
-        if($('.brand-slider').length > 0) {
-            const brandSlider = new Swiper(".brand-slider", {
-                spaceBetween: 30,
-                speed: 2000,
-                loop: true,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                },
-
-                breakpoints: {
-                    1399: {
-                        slidesPerView: 6,
-                    },
-                    1199: {
-                        slidesPerView: 5,
-                    },
-                    991: {
-                        slidesPerView: 4,
-                    },
-                    767: {
-                        slidesPerView: 3,
-                    },
-                    575: {
-                        slidesPerView: 2,
-                    },
-                    0: {
-                        slidesPerView: 1,
-                    },
-                },
-            });
-        }
-        
-
-        //>> Shop-slider Slider Start <<//
-        if($('.shop-slider').length > 0) {
-            const shopSlider = new Swiper(".shop-slider", {
-                spaceBetween: 24,
-                speed: 2000,
-                loop: true,
-                autoplay: {
-                    delay: 1000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: ".dot",
-                    clickable: true,
-                },
                 navigation: {
                     nextEl: ".array-prev",
                     prevEl: ".array-next",
                 },
                 breakpoints: {
-                    1399: {
-                        slidesPerView: 6,
-                    },
                     1199: {
-                        slidesPerView: 5,
+                        slidesPerView: 2,
                     },
                     991: {
-                        slidesPerView: 4,
+                        slidesPerView: 1,
                     },
                     767: {
-                        slidesPerView: 3,
+                        slidesPerView: 1,
                     },
                     575: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     },
                     0: {
                         slidesPerView: 1,
@@ -331,175 +296,83 @@ CSS TABLE OF CONTENTS
             });
         }
 
-        //>> Quantity Cart Js Start <<//
-        let quantity = 0;
-        let price = 0;
-        $(".cart-item-quantity-amount, .product-quant").html(quantity);
-        $(".total-price, .product-pri").html(price.toFixed(2));
-        $(".cart-increment, .cart-incre").on("click", function() {
-            if (quantity <= 4) {
-                quantity++;
-                $(".cart-item-quantity-amount, .product-quant").html(quantity);
-                let basePrice = $(".base-price, .base-pri").text();
-                $(".total-price, .product-pri").html((basePrice * quantity).toFixed(2));
-            }
+        //>> Project Hover Js Start <<//
+        const getSlide = $('.main-box, .box').length - 1;
+        const slideCal = 100 / getSlide + '%';
+
+        $('.box').css({
+            "width": slideCal
         });
 
-        $(".cart-decrement, .cart-decre").on("click", function() {
-            if (quantity >= 1) {
-                quantity--;
-                $(".cart-item-quantity-amount, .product-quant").html(quantity);
-                let basePrice = $(".base-price, .base-pri").text();
-                $(".total-price, .product-pri").html((basePrice * quantity).toFixed(2));
-            }
+        $('.box').hover(function() {
+            $('.box').removeClass('active');
+            $(this).addClass('active');
         });
 
-        $(".cart-item-remove>a").on("click", function() {
-            $(this).closest(".cart-item").hide(300);
+        //>> Search Popup Start <<//
+        const $searchWrap = $(".search-wrap");
+        const $navSearch = $(".nav-search");
+        const $searchClose = $("#search-close");
+
+        $(".search-trigger").on("click", function (e) {
+            e.preventDefault();
+            $searchWrap.animate({ opacity: "toggle" }, 500);
+            $navSearch.add($searchClose).addClass("open");
         });
 
-        //>> Quantity Js Start <<//
-    $(".quantity").on("click", ".plus", function (e) {
-        let $input = $(this).prev("input.qty");
-        let val = parseInt($input.val(), 10); // Specify base 10
-        $input.val(val + 1).change();
-    });
+        $(".search-close").on("click", function (e) {
+            e.preventDefault();
+            $searchWrap.animate({ opacity: "toggle" }, 500);
+            $navSearch.add($searchClose).removeClass("open");
+        });
 
-    $(".quantity").on("click", ".minus", function (e) {
-        let $input = $(this).next("input.qty");
-        let val = parseInt($input.val(), 10); // Specify base 10
-        if (val > 0) {
-            $input.val(val - 1).change();
-        }
-    });
-
-         // 11.Range sliger
-         function getVals() {
-            let parent = this.parentNode;
-            let slides = parent.getElementsByTagName("input");
-            let slide1 = parseFloat(slides[0].value);
-            let slide2 = parseFloat(slides[1].value);
-            if (slide1 > slide2) {
-                let tmp = slide2;
-                slide2 = slide1;
-                slide1 = tmp;
-            }
-
-            let displayElement = parent.getElementsByClassName("rangeValues")[0];
-            displayElement.innerHTML = "$" + slide1 + " - $" + slide2;
+        function closeSearch() {
+            $searchWrap.fadeOut(200);
+            $navSearch.add($searchClose).removeClass("open");
         }
 
-        window.onload = function () {
-            let sliderSections = document.getElementsByClassName("range-slider");
-            for (let x = 0; x < sliderSections.length; x++) {
-                let sliders = sliderSections[x].getElementsByTagName("input");
-                for (let y = 0; y < sliders.length; y++) {
-                    if (sliders[y].type === "range") {
-                        sliders[y].oninput = getVals;
-                        sliders[y].oninput();
-                    }
-                }
+        $(document.body).on("click", function (e) {
+            closeSearch();
+        });
+
+        $(".search-trigger, .main-search-input").on("click", function (e) {
+            e.stopPropagation();
+        });
+
+        //>> Mouse Cursor Start <<//
+        function mousecursor() {
+            if ($("body")) {
+                const e = document.querySelector(".cursor-inner"),
+                    t = document.querySelector(".cursor-outer");
+                let n,
+                    i = 0,
+                    o = !1;
+                (window.onmousemove = function(s) {
+                    o ||
+                        (t.style.transform =
+                            "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+                        (e.style.transform =
+                            "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+                        (n = s.clientY),
+                        (i = s.clientX);
+                }),
+                $("body").on("mouseenter", "a, .cursor-pointer", function() {
+                        e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
+                    }),
+                    $("body").on("mouseleave", "a, .cursor-pointer", function() {
+                        ($(this).is("a") && $(this).closest(".cursor-pointer").length) ||
+                        (e.classList.remove("cursor-hover"),
+                            t.classList.remove("cursor-hover"));
+                    }),
+                    (e.style.visibility = "visible"),
+                    (t.style.visibility = "visible");
             }
         }
-
-        progressBar: () => {
-            const pline = document.querySelectorAll(".progressbar.line");
-            const pcircle = document.querySelectorAll(".progressbar.semi-circle");
-            pline.forEach(e => {
-                const line = new ProgressBar.Line(e, {
-                    strokeWidth: 6,
-                    trailWidth: 6,
-                    duration: 3000,
-                    easing: 'easeInOut',
-                    text: {
-                        style: {
-                            color: 'inherit',
-                            position: 'absolute',
-                            right: '0',
-                            top: '-30px',
-                            padding: 0,
-                            margin: 0,
-                            transform: null
-                        },
-                        autoStyleContainer: false
-                    },
-                    step: (state, line) => {
-                        line.setText(Math.round(line.value() * 100) + ' %');
-                    }
-                });
-                let value = e.getAttribute('data-value') / 100;
-                new Waypoint({
-                    element: e,
-                    handler: function () {
-                        line.animate(value);
-                    },
-                    offset: 'bottom-in-view',
-                })
-            });
-            pcircle.forEach(e => {
-                const circle = new ProgressBar.SemiCircle(e, {
-                    strokeWidth: 6,
-                    trailWidth: 6,
-                    duration: 2000,
-                    easing: 'easeInOut',
-                    step: (state, circle) => {
-                        circle.setText(Math.round(circle.value() * 100));
-                    }
-                });
-                let value = e.getAttribute('data-value') / 100;
-                new Waypoint({
-                    element: e,
-                    handler: function () {
-                        circle.animate(value);
-                    },
-                    offset: 'bottom-in-view',
-                })
-            });
-        }
-
-        const rangeInput = document.querySelectorAll(".range-input input"),
-            priceInput = document.querySelectorAll(".price-input input"),
-            range = document.querySelector(".slider .progress");
-        let priceGap = 1000;
-
-        priceInput.forEach((input) => {
-            input.addEventListener("input", (e) => {
-                let minPrice = parseInt(priceInput[0].value),
-                    maxPrice = parseInt(priceInput[1].value);
-
-                if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
-                    if (e.target.className === "input-min") {
-                        rangeInput[0].value = minPrice;
-                        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-                    } else {
-                        rangeInput[1].value = maxPrice;
-                        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-                    }
-                }
-            });
+        $(function() {
+            mousecursor();
         });
 
-        rangeInput.forEach((input) => {
-            input.addEventListener("input", (e) => {
-                let minVal = parseInt(rangeInput[0].value),
-                    maxVal = parseInt(rangeInput[1].value);
-
-                if (maxVal - minVal < priceGap) {
-                    if (e.target.className === "range-min") {
-                        rangeInput[0].value = maxVal - priceGap;
-                    } else {
-                        rangeInput[1].value = minVal + priceGap;
-                    }
-                } else {
-                    priceInput[0].value = minVal;
-                    priceInput[1].value = maxVal;
-                    range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
-                    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
-                }
-            });
-        });
-       
-        //>> Back To Top Start <<//
+        //>> Back To Top Slider Start <<//
         $(window).scroll(function () {
             if ($(this).scrollTop() > 20) {
                 $("#back-top").addClass("show");
@@ -511,10 +384,61 @@ CSS TABLE OF CONTENTS
             $("html, body").animate({ scrollTop: 0 }, 800);
             return false;
         });
-	// Back to top btn area end here ***
 
+        // circle-progress
+        $(".circle-bar").loading();
+       
 
     }); // End Document Ready Function
+
+    $.fn.loading = function() {
+        const DEFAULTS = {
+            backgroundColor: '#b3cef6',
+            progressColor: '#4b86db',
+            percent: 75,
+            duration: 2000
+        };
+
+        $(this).each(function() {
+            const $target = $(this);
+
+            const opts = {
+                backgroundColor: $target.data('color') ? $target.data('color').split(',')[0] : DEFAULTS.backgroundColor,
+                progressColor: $target.data('color') ? $target.data('color').split(',')[1] : DEFAULTS.progressColor,
+                percent: $target.data('percent') ? $target.data('percent') : DEFAULTS.percent,
+                duration: $target.data('duration') ? $target.data('duration') : DEFAULTS.duration
+            };
+            // console.log(opts);
+
+            $target.append('<div class="background"></div><div class="rotate"></div><div class="left"></div><div class="right"></div><div class=""><span>' + opts.percent + '%</span></div>');
+
+            $target.find('.background').css('background-color', opts.backgroundColor);
+            $target.find('.left').css('background-color', opts.backgroundColor);
+            $target.find('.rotate').css('background-color', opts.progressColor);
+            $target.find('.right').css('background-color', opts.progressColor);
+
+            const $rotate = $target.find('.rotate');
+            setTimeout(function() {
+                $rotate.css({
+                    'transition': 'transform ' + opts.duration + 'ms linear',
+                    'transform': 'rotate(' + opts.percent * 3.6 + 'deg)'
+                });
+            }, 1);
+
+            if (opts.percent > 50) {
+                let animationRight = 'toggle ' + (opts.duration / opts.percent * 50) + 'ms step-end';
+                let animationLeft = 'toggle ' + (opts.duration / opts.percent * 50) + 'ms step-start';
+                $target.find('.right').css({
+                    animation: animationRight,
+                    opacity: 1
+                });
+                $target.find('.left').css({
+                    animation: animationLeft,
+                    opacity: 0
+                });
+            }
+        });
+    }
 
     function loader() {
         $(window).on('load', function() {

@@ -6,10 +6,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="gramentheme">
-        <meta name="description" content="RevAuto - Car Dealer & Services Html Template">
+        <meta name="author" content="Gramentheme">
+        <meta name="description" content="Digtek - Digital Marketing Agency Html Template">
         <!-- ======== Page title ============ -->
-        <title>RevAuto - Car Dealer & Services Html Template</title>
+        <title>Digtek - Digital Marketing Agency Html Template</title>
         <!--<< Favcion >>-->
         <link rel="shortcut icon" href="assets/img/favicon.svg">
         <!--<< Bootstrap min.css >>-->
@@ -33,10 +33,60 @@
     </head>
     <body >
 
+
+        <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">                
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="G" class="letters-loading">
+                        G
+                    </span>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top">
             <i class="fa-regular fa-arrow-up"></i>
         </button>
+
+        <!--<< Mouse Cursor Start >>-->  
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
 
         <!-- Offcanvas Area Start -->
         <div class="fix-area">
@@ -96,9 +146,10 @@
                                 </li>
                             </ul>
                             <div class="header-button mt-4">
-                                <a href="contact.html" class="theme-btn text-center">
-                                    Get A Quote
-                                </a>
+                                
+                            </div>
+                            <div class="main-button">
+                                <a href="contact.html"> <span class="theme-btn"> Get Started </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                             </div>
                             <div class="social-icon d-flex align-items-center">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -114,15 +165,12 @@
         <div class="offcanvas__overlay"></div>
 
         <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1 style-inner">
-            <div class="container">
+        <header id="header-sticky" class="header-1 style-2">
+            <div class="container-fluid">
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
                         <div class="logo">
-                            <a href="index.html" class="header-logo">
-                                <img src="assets/img/logo/white-logo.svg" alt="logo-img">
-                            </a>
-                            <a href="index.html" class="header-logo-2">
+                            <a href="index.html" class="header-logo-3">
                                 <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -133,46 +181,66 @@
                                         <li class="has-dropdown active menu-thumb">
                                             <a href="index.html">
                                                 Home 
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu has-homemenu">
                                                 <li>
-                                                    <div class="row g-4 homemenu-items">
-                                                        <div class="col-lg-4">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="index.html">
-                                                                        <img src="assets/img/header/home-1.jpg" alt="img">
+                                                    <div class="homemenu-items">
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb">
+                                                                <img src="assets/img/header/home-1.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-one-page.html" class="theme-btn">
+                                                                        One Page
                                                                     </a>
                                                                 </div>
+                                                            </div>
+                                                            <div class="homemenu-content text-center">
                                                                 <h4 class="homemenu-title">
-                                                                    <a href="index.html">Home Page 01</a>
+                                                                    Home 01
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="index-2.html">
-                                                                        <img src="assets/img/header/home-2.jpg" alt="img">
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb mb-15">
+                                                                <img src="assets/img/header/home-2.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index-2.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-two-page.html" class="theme-btn">
+                                                                        One Page
                                                                     </a>
                                                                 </div>
+                                                            </div>
+                                                            <div class="homemenu-content text-center">
                                                                 <h4 class="homemenu-title">
-                                                                    <a href="index-2.html">Home Page 02</a>
+                                                                    Home 02
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="home-landing.html">
-                                                                        <img src="assets/img/header/home-3.jpg" alt="img">
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb mb-15">
+                                                                <img src="assets/img/header/home-3.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index-3.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-three-page.html" class="theme-btn">
+                                                                        One Page
                                                                     </a>
                                                                 </div>
+                                                            </div>
+                                                            <div class="homemenu-content text-center">
                                                                 <h4 class="homemenu-title">
-                                                                    <a href="home-landing.html">Landing Page</a>
+                                                                    Home 03
                                                                 </h4>
                                                             </div>
                                                         </div>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </li>
@@ -181,88 +249,66 @@
                                             Home
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="index.html">Home Page 01</a></li>
-                                                <li><a href="index-2.html">Home Page 02</a></li>
-                                                <li><a href="home-landing.html">Landing Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about.html">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-details.html">
-                                                Services
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
+                                                <li><a href="index.html">Home 01</a></li>
+                                                <li><a href="index-2.html">Home 02</a></li>
+                                                <li><a href="index-3.html">Home 03</a></li>
                                             </ul>
                                         </li>
                                         <li class="has-dropdown">
                                             <a href="news.html">
                                                 Pages
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li class="has-dropdown">
-                                                    <a href="project-details.html">
-                                                        Portfolio
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="project.html">Portfolio 01</a></li>
-                                                        <li><a href="project-2.html">Portfolio 02</a></li>
-                                                        <li><a href="project-details.html">Project Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-dropdown">
-                                                    <a href="car-details.html">
-                                                        Vehicles
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="car.html">Vehicles</a></li>
-                                                        <li><a href="car-details.html">Vehicles Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="faq.html">Faq's</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                                <li><a href="login.html">Log In</a></li>
-                                                <li><a href="register.html">Register</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="team-details.html">Team Details</a></li>
+                                                <li><a href="pricing.html">Our Pricing</a></li>
+                                                <li><a href="faq.html">Our Faq</a></li>
                                                 <li><a href="404.html">404 Page</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop-details.html">
-                                                Shop
+                                            <a href="service-details.html">
+                                                Services
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="service.html">Service Page</a></li>
+                                                <li><a href="service-details.html">Service Details</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="news.html">
-                                                Blog
+                                            <a href="project-details.html">
+                                                Projects
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="news.html">Blog </a></li>
+                                                <li><a href="project.html">Projects</a></li>
+                                                <li><a href="project-details.html">Project Details</a></li>
+                                            </ul>
+                                        </li>
+                                       <li>
+                                            <a href="news-details.html">
+                                                Blog
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="news-grid.html">Blog Grid</a></li>
+                                                <li><a href="news.html">Blog Standard</a></li>
                                                 <li><a href="news-details.html">Blog Details</a></li>
                                             </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact Us</a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="menu-cart">
-                                <a href="shop-cart.html" class="cart-icon">
-                                    <i class="fa-regular fa-cart-shopping"></i>
-                                </a>
-                            </div>
-                            <div class="header-button">
-                                <a href="contact.html" class="theme-btn">Contact Us</a>
+                            <div class="main-button">
+                                <a href="contact.html"> <span class="theme-btn"> Get Started </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                             </div>
                             <div class="header__hamburger d-xl-none my-auto">
                                 <div class="sidebar__toggle">
@@ -276,7 +322,13 @@
         </header>
 
         <!-- Breadcrumb Section Start -->
-        <div class="breadcrumb-wrapper section-bg bg-cover" style="background-image: url('assets/img/breadcrumb-bg.jpg');">
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/breadcrumb.jpg');">
+            <div class="left-shape">
+                <img src="assets/img/breadcrumb-shape.png" alt="img">
+            </div>
+            <div class="right-shape">
+                <img src="assets/img/breadcrumb-shape-2.png" alt="img">
+            </div>
             <div class="container">
                 <div class="page-heading">
                     <div class="breadcrumb-sub-title">
@@ -289,7 +341,7 @@
                             </a>
                         </li>
                         <li>
-                            <i class="fa-regular fa-chevrons-right"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </li>
                         <li>
                             Contact Us
@@ -299,83 +351,95 @@
             </div>
         </div>
 
-        <!-- Contact Sction Start -->
-        <section class="contact-section fix section-padding">
+        <section class="contact-info-section fix section-padding">
             <div class="container">
-                <div class="contact-wrapper">
-                    <div class="row g-4">
-                        <div class="col-lg-4">
-                            <div class="contact-left">
-                                <div class="contact-box">
-                                    <div class="icon">
-                                        <i class="fa-regular fa-phone-volume"></i>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Call Us For Support:</h4>
-                                        <p><a href="tel:7045550127">(704) 555-0127</a></p>
-                                    </div>
-                                </div>
-                                <div class="contact-box">
-                                    <div class="icon">
-                                        <i class="fa-regular fa-envelope"></i>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Email Us Anytime</h4>
-                                        <p><a href="mailto:info@example.com">info@example.com</a></p>
-                                    </div>
-                                </div>
-                                <div class="contact-box">
-                                    <div class="icon">
-                                        <i class="fa-regular fa-location-dot"></i>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Office Address</h4>
-                                        <p>Cedar Street, Chicago,60601, USA</p>
-                                    </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="contact-info-items text-center active">
+                            <div class="icon">
+                                <img src="assets/img/icon/09.svg" alt="icon-img">
+                            </div>
+                            <div class="content">
+                                <h3>Our Address</h3>
+                                <p>
+                                    2464 Royal Ln. Mesa, New Jersey <br> 45463.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="contact-info-items text-center">
+                            <div class="icon">
+                                <img src="assets/img/icon/10.svg" alt="icon-img">
+                            </div>
+                            <div class="content">
+                                <h3><a href="mailto:info@example.com">info@example.com</a></h3>
+                                <p>
+                                    Email us anytime for anykind <br>
+                                    ofquety.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="contact-info-items text-center">
+                            <div class="icon">
+                                <img src="assets/img/icon/11.svg" alt="icon-img">
+                            </div>
+                            <div class="content">
+                                <h3>Hot:<a href="tel:+2086660112">+208-666-0112</a></h3>
+                                <p>
+                                    Call us any kind suppor,we <br>
+                                    will wait for it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section Start -->
+        <section class="contact-section-33 fix section-padding pt-0">
+            <div class="container">
+                <div class="contact-wrapper-2">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="map-items">
+                                <div class="googpemap">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8">
-                            <div class="contact-right-box">
-                                <div class="section-title text-center">
-                                    <h6 class="wow fadeInUp">Contact Us</h6>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Get in touch</h2>
-                                </div>
-                                <form action="contact.php" id="contact-form" method="POST" class="contact-form-items mt-3 mt-md-0">
+                        <div class="col-lg-6">
+                            <div class="contact-content">
+                                <h2>Ready to Get Started?</h2>
+                                <p>
+                                    Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor ultrices,
+                                </p>
+                                <form action="contact.php" id="contact-form" method="POST" class="contact-form-items">
                                     <div class="row g-4">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                             <div class="form-clt">
-                                                <span>Your Name*</span>
+                                                <span>Your name*</span>
                                                 <input type="text" name="name" id="name" placeholder="Your Name">
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                                             <div class="form-clt">
-                                                <span>Email Address*</span>
+                                                <span>Your Email*</span>
                                                 <input type="text" name="email" id="email" placeholder="Your Email">
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
                                             <div class="form-clt">
-                                                <span>Phone Number*</span>
-                                                <input type="text" name="phone" id="phone" placeholder="phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-clt">
-                                                <span>Company Website*</span>
-                                                <input type="text" name="website" id="website" placeholder="Website">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-clt">
-                                                <span>Describe your message*</span>
+                                                <span>Write Message*</span>
                                                 <textarea name="message" id="message" placeholder="Write Message"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12">
+                                        <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
                                             <button type="submit" class="theme-btn">
-                                                SUBMIT
+                                                Send Message <i class="fa-solid fa-arrow-right-long"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -386,147 +450,88 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Map Section Start -->
-        <div class="map-section section-padding fix pt-0">
-            <div class="container">
-                <div class="google-map wow fadeInUp" data-wow-delay=".3s">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
 
-         <!-- Faq Section Start -->
-         <section class="faq-section fix section-padding pt-0">
+        <!-- Cta Section Start -->
+        <section class="cta-section section-padding pb-0">
+            <div class="rokect-shape float-bob-y">
+                <img src="assets/img/rokect.png" alt="img">
+            </div>
             <div class="container">
-                <div class="section-title text-center">
-                    <h6 class="wow fadeInUp">FAQ</h6>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Frequently Asked Questions</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="faq-image">
-                            <img src="assets/img/faq.jpg" alt="img">
-                        </div>
+                <div class="cta-wrapper bg-cover" style="background-image: url('assets/img/cta-bg.jpg');">
+                    <div class="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        <img src="assets/img/cta-img.png" alt="img">
                     </div>
-                    <div class="col-lg-6">
-                        <div class="faq-content">
-                            <div class="faq-accordion">
-                                <div class="accordion" id="accordion">
-                                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                                What types of cars do you have in your showroom?
-                                            </button>
-                                        </h5>
-                                        <div id="faq1" class="accordion-collapse show" data-bs-parent="#accordion">
-                                            <div class="accordion-body">
-                                                Absolutely! You can book a test drive through our website or by contacting our team directly. We’ll make sure the car is ready for you when you arrive.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item wow fadeInUp" data-wow-delay=".4s">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                                Do you provide financing options?
-                                            </button>
-                                        </h5>
-                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                            <div class="accordion-body">
-                                                Absolutely! You can book a test drive through our website or by contacting our team directly. We’ll make sure the car is ready for you when you arrive.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                                Can I schedule a test drive?
-                                            </button>
-                                        </h5>
-                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                            <div class="accordion-body">
-                                                Absolutely! You can book a test drive through our website or by contacting our team directly. We’ll make sure the car is ready for you when you arrive.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item mb-0 wow fadeInUp" data-wow-delay=".7s">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                                                Do you offer car maintenance services?
-                                            </button>
-                                        </h5>
-                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                            <div class="accordion-body">
-                                                Absolutely! You can book a test drive through our website or by contacting our team directly. We’ll make sure the car is ready for you when you arrive.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        Stay Connected With <br> Cutting Edge IT
+                    </h2>
+                    <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                        <a href="contact.html"> <span class="theme-btn"> talk TO  A SPECIALIST </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer Section Start -->
-        <section class="footer-section fix bg-cover" style="background-image: url('assets/img/footer-bg.jpg');">
+        <section class="footer-section footer-bg fix">
             <div class="container">
                 <div class="footer-widgets-wrapper">
                     <div class="row">
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Utility Pages</h3>
+                                    <a href="index.html">
+                                        <img src="assets/img/logo/white-logo.svg" alt="img">
+                                    </a>
                                 </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="index.html">
-                                            Home 01
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html">
-                                            Home 02
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="home-landing.html">
-                                            Home 03
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">
-                                            About Us
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="footer-content">
+                                    <p>
+                                        Phasellus ultricies aliquam volutpat 
+                                        ullamcorper laoreet neque, a lacinia
+                                        curabitur lacinia mollis
+                                    </p>
+                                    <div class="social-icon d-flex align-items-center">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Explore</h3>
+                                    <h3>Quick Links</h3>
                                 </div>
-                                <ul class="list-items">
+                                <ul class="list-area">
+                                    <li>
+                                        <a href="about.html">
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Digtek About
+                                        </a>
+                                    </li>
                                     <li>
                                         <a href="service.html">
-                                            Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="project.html">
-                                            Portfolio
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">
-                                            Faq
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Our Services
                                         </a>
                                     </li>
                                     <li>
                                         <a href="news.html">
-                                            Our Blog
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Our Blogs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            FAQ’S
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Contact Us
                                         </a>
                                     </li>
                                 </ul>
@@ -535,60 +540,107 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Find a car</h3>
+                                    <h3>Recent Posts</h3>
                                 </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="shop.html">
-                                            Our Shop
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="car.html">
-                                            Cart
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="checkout.html">
-                                            Checkout
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="recent-post-area">
+                                    <div class="recent-post-items">
+                                        <div class="thumb">
+                                            <img src="assets/img/news/pp1.jpg" alt="post-img">
+                                        </div>
+                                        <div class="content">
+                                            <ul class="post-date">
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days me-2"></i>
+                                                    20 Feb, 2024
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="news-details.html">
+                                                    Top 5 Most Famous <br>
+                                                    Technology Trend In 2024
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="recent-post-items mb-0">
+                                        <div class="thumb">
+                                            <img src="assets/img/news/pp2.jpg" alt="post-img">
+                                        </div>
+                                        <div class="content">
+                                            <ul class="post-date">
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days me-2"></i>
+                                                    15 Dec, 2024
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="news-details.html">
+                                                    The Surfing Man Will Blow <br>
+                                                    Your Mind   
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Get In Touch</h3>
+                                    <h3>Contact Us</h3>
                                 </div>
-                                <ul class="contact-list">
-                                    <li>
-                                        Valentin, Street Road 27, New
-                                        York. USA - 752252
-                                    </li>
-                                    <li>
-                                        <a href="tel:2395550108">(239) 555-0108</a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:info@example.com">info@example.com</a>
-                                    </li>
-                                </ul>
+                                <div class="footer-content">
+                                    <ul class="contact-info">
+                                        <li>
+                                            <i class="fa-regular fa-envelope"></i>
+                                            <a href="mailto:info@example.com">info@example.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                            <a href="tel:2086660112">+208-666-0112</a>
+                                        </li>
+                                    </ul>
+                                    <div class="footer-input">
+                                        <input type="email" id="email2" placeholder="Your email address">
+                                        <button class="newsletter-btn" type="submit">
+                                            <i class="fa-regular fa-arrow-right-long"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            I agree to the <a href="contact.html">Privacy Policy.</a>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom-wrapper">
-                    <p><a href="contact.html" class="wow fadeInUp" data-wow-delay=".3s">Terms of Use</a></p>
-                    <p class="wow fadeInUp" data-wow-delay=".5s">
-                        © 2024 Gramentheme. All rights reserved.
-                    </p>
-                    <p><a href="contact.html" class="wow fadeInUp" data-wow-delay=".7s">Privacy Policy</a></p>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                        <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
+                            © All Copyright 2024 by Digtek
+                        </p>
+                        <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
+                            <li>
+                                <a href="contact.html">
+                                    Terms & Condition       
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <a href="#" id="scrollUp" class="scroll-icon">
+                    <i class="far fa-arrow-up"></i>
+                </a>
             </div>
         </section>
         
@@ -612,6 +664,8 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
+        <!--<< Circle Progress Js >>-->
+        <script src="assets/js/circle-progress.js"></script>
         <!--<< Ajax Mail Js >>-->
         <script src="assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->

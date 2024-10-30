@@ -6,10 +6,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="gramentheme">
-        <meta name="description" content="RevAuto - Car Dealer & Services Html Template">
+        <meta name="author" content="Gramentheme">
+        <meta name="description" content="Digtek - Digital Marketing Agency Html Template">
         <!-- ======== Page title ============ -->
-        <title>RevAuto - Car Dealer & Services Html Template</title>
+        <title>Digtek - Digital Marketing Agency Html Template</title>
         <!--<< Favcion >>-->
         <link rel="shortcut icon" href="assets/img/favicon.svg">
         <!--<< Bootstrap min.css >>-->
@@ -33,10 +33,60 @@
     </head>
     <body >
 
+
+        <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">                
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="G" class="letters-loading">
+                        G
+                    </span>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top">
             <i class="fa-regular fa-arrow-up"></i>
         </button>
+
+        <!--<< Mouse Cursor Start >>-->  
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
 
         <!-- Offcanvas Area Start -->
         <div class="fix-area">
@@ -96,9 +146,10 @@
                                 </li>
                             </ul>
                             <div class="header-button mt-4">
-                                <a href="contact.html" class="theme-btn text-center">
-                                    Get A Quote
-                                </a>
+                                
+                            </div>
+                            <div class="main-button">
+                                <a href="contact.html"> <span class="theme-btn"> Get Started </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                             </div>
                             <div class="social-icon d-flex align-items-center">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -114,15 +165,12 @@
         <div class="offcanvas__overlay"></div>
 
         <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1 style-inner">
-            <div class="container">
+        <header id="header-sticky" class="header-1 style-2">
+            <div class="container-fluid">
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
                         <div class="logo">
-                            <a href="index.html" class="header-logo">
-                                <img src="assets/img/logo/white-logo.svg" alt="logo-img">
-                            </a>
-                            <a href="index.html" class="header-logo-2">
+                            <a href="index.html" class="header-logo-3">
                                 <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -133,46 +181,66 @@
                                         <li class="has-dropdown active menu-thumb">
                                             <a href="index.html">
                                                 Home 
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu has-homemenu">
                                                 <li>
-                                                    <div class="row g-4 homemenu-items">
-                                                        <div class="col-lg-4">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="index.html">
-                                                                        <img src="assets/img/header/home-1.jpg" alt="img">
+                                                    <div class="homemenu-items">
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb">
+                                                                <img src="assets/img/header/home-1.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-one-page.html" class="theme-btn">
+                                                                        One Page
                                                                     </a>
                                                                 </div>
+                                                            </div>
+                                                            <div class="homemenu-content text-center">
                                                                 <h4 class="homemenu-title">
-                                                                    <a href="index.html">Home Page 01</a>
+                                                                    Home 01
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="index-2.html">
-                                                                        <img src="assets/img/header/home-2.jpg" alt="img">
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb mb-15">
+                                                                <img src="assets/img/header/home-2.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index-2.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-two-page.html" class="theme-btn">
+                                                                        One Page
                                                                     </a>
                                                                 </div>
+                                                            </div>
+                                                            <div class="homemenu-content text-center">
                                                                 <h4 class="homemenu-title">
-                                                                    <a href="index-2.html">Home Page 02</a>
+                                                                    Home 02
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4">
-                                                            <div class="homemenu">
-                                                                <div class="homemenu-thumb">
-                                                                    <a href="home-landing.html">
-                                                                        <img src="assets/img/header/home-3.jpg" alt="img">
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb mb-15">
+                                                                <img src="assets/img/header/home-3.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index-3.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-three-page.html" class="theme-btn">
+                                                                        One Page
                                                                     </a>
                                                                 </div>
+                                                            </div>
+                                                            <div class="homemenu-content text-center">
                                                                 <h4 class="homemenu-title">
-                                                                    <a href="home-landing.html">Landing Page</a>
+                                                                    Home 03
                                                                 </h4>
                                                             </div>
                                                         </div>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </li>
@@ -181,88 +249,66 @@
                                             Home
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="index.html">Home Page 01</a></li>
-                                                <li><a href="index-2.html">Home Page 02</a></li>
-                                                <li><a href="home-landing.html">Landing Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about.html">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-details.html">
-                                                Services
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
+                                                <li><a href="index.html">Home 01</a></li>
+                                                <li><a href="index-2.html">Home 02</a></li>
+                                                <li><a href="index-3.html">Home 03</a></li>
                                             </ul>
                                         </li>
                                         <li class="has-dropdown">
                                             <a href="news.html">
                                                 Pages
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li class="has-dropdown">
-                                                    <a href="project-details.html">
-                                                        Portfolio
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="project.html">Portfolio 01</a></li>
-                                                        <li><a href="project-2.html">Portfolio 02</a></li>
-                                                        <li><a href="project-details.html">Project Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-dropdown">
-                                                    <a href="car-details.html">
-                                                        Vehicles
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="car.html">Vehicles</a></li>
-                                                        <li><a href="car-details.html">Vehicles Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="faq.html">Faq's</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                                <li><a href="login.html">Log In</a></li>
-                                                <li><a href="register.html">Register</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="team-details.html">Team Details</a></li>
+                                                <li><a href="pricing.html">Our Pricing</a></li>
+                                                <li><a href="faq.html">Our Faq</a></li>
                                                 <li><a href="404.html">404 Page</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="shop-details.html">
-                                                Shop
+                                            <a href="service-details.html">
+                                                Services
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="service.html">Service Page</a></li>
+                                                <li><a href="service-details.html">Service Details</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="news.html">
-                                                Blog
+                                            <a href="project-details.html">
+                                                Projects
+                                                <i class="fa-solid fa-chevron-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="news.html">Blog </a></li>
+                                                <li><a href="project.html">Projects</a></li>
+                                                <li><a href="project-details.html">Project Details</a></li>
+                                            </ul>
+                                        </li>
+                                       <li>
+                                            <a href="news-details.html">
+                                                Blog
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="news-grid.html">Blog Grid</a></li>
+                                                <li><a href="news.html">Blog Standard</a></li>
                                                 <li><a href="news-details.html">Blog Details</a></li>
                                             </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact Us</a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="menu-cart">
-                                <a href="shop-cart.html" class="cart-icon">
-                                    <i class="fa-regular fa-cart-shopping"></i>
-                                </a>
-                            </div>
-                            <div class="header-button">
-                                <a href="contact.html" class="theme-btn">Contact Us</a>
+                            <div class="main-button">
+                                <a href="contact.html"> <span class="theme-btn"> Get Started </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                             </div>
                             <div class="header__hamburger d-xl-none my-auto">
                                 <div class="sidebar__toggle">
@@ -276,11 +322,17 @@
         </header>
 
         <!-- Breadcrumb Section Start -->
-        <div class="breadcrumb-wrapper section-bg bg-cover" style="background-image: url('assets/img/breadcrumb-bg.jpg');">
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/breadcrumb.jpg');">
+            <div class="left-shape">
+                <img src="assets/img/breadcrumb-shape.png" alt="img">
+            </div>
+            <div class="right-shape">
+                <img src="assets/img/breadcrumb-shape-2.png" alt="img">
+            </div>
             <div class="container">
                 <div class="page-heading">
                     <div class="breadcrumb-sub-title">
-                        <h1 class="wow fadeInUp" data-wow-delay=".3s">Services</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay=".3s">Our Services</h1>
                     </div>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
@@ -289,120 +341,89 @@
                             </a>
                         </li>
                         <li>
-                            <i class="fa-regular fa-chevrons-right"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </li>
                         <li>
-                            Services
+                            Our Services
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        
+
         <!-- Service Section Start -->
         <section class="service-section fix section-padding">
             <div class="container">
-                <div class="section-title text-center">
-                    <h6 class="wow fadeInUp">What We Do</h6>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Services we Offer</h2>
-                    <p class="mt-3 wow fadeInUp" data-wow-delay=".5s">
-                        No matter what your automotive needs may be, we're here to help. Contact us today to learn more about our <br> services and how we can assist you with all of your needs.
-                    </p>
-                </div>
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="service-box-items">
-                            <div class="number">
-                                01
+                        <div class="service-box-items mt-0">
+                            <div class="icon">
+                                <img src="assets/img/service/icon-1.png" alt="img">
                             </div>
-                            <div class="content">
-                                <h4><a href="service-details.html">New Car Sales</a></h4>
-                                <p>
-                                    Explore our latest collection of new models from top manufacturers.
-                                </p>
-                                <a href="service-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
+                            <div class="content"> 
+                                <h4><a href="service-details.html">Digital Marketing</a></h4>
+                                <p>Lorem dolor amet consectetur read adipiscing any more elit.</p>
+                                <a href="service-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="service-box-items">
-                            <div class="number">
-                                02
+                        <div class="service-box-items mt-0">
+                            <div class="icon">
+                                <img src="assets/img/service/icon-2.png" alt="img">
                             </div>
-                            <div class="content">
-                                <h4><a href="service-details.html">Pre-Owned Vehicle Sales</a></h4>
-                                <p>
-                                    Explore our latest collection of new models from top manufacturers.
-                                </p>
-                                <a href="service-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
+                            <div class="content"> 
+                                <h4><a href="service-details.html">SEO Analytics</a></h4>
+                                <p>Lorem dolor amet consectetur read adipiscing any more elit.</p>
+                                <a href="service-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="service-box-items">
-                            <div class="number">
-                                03
+                        <div class="service-box-items mt-0">
+                            <div class="icon">
+                                <img src="assets/img/service/icon-3.png" alt="img">
                             </div>
-                            <div class="content">
-                                <h4><a href="service-details.html">Car Trade-In Services</a></h4>
-                                <p>
-                                    Explore our latest collection of new models from top manufacturers.
-                                </p>
-                                <a href="service-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
+                            <div class="content"> 
+                                <h4><a href="service-details.html">Social Marketing</a></h4>
+                                <p>Lorem dolor amet consectetur read adipiscing any more elit.</p>
+                                <a href="service-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="service-box-items">
-                            <div class="number">
-                                04
+                        <div class="service-box-items mt-0">
+                            <div class="icon">
+                                <img src="assets/img/service/icon-4.png" alt="img">
                             </div>
-                            <div class="content">
-                                <h4><a href="service-details.html">Vehicle Financing Assistance</a></h4>
-                                <p>
-                                    Explore our latest collection of new models from top manufacturers.
-                                </p>
-                                <a href="service-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
+                            <div class="content"> 
+                                <h4><a href="service-details.html">Email Marketing</a></h4>
+                                <p>Lorem dolor amet consectetur read adipiscing any more elit.</p>
+                                <a href="service-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="service-box-items">
-                            <div class="number">
-                                05
+                        <div class="service-box-items mt-0">
+                            <div class="icon">
+                                <img src="assets/img/service/icon-5.png" alt="img">
                             </div>
-                            <div class="content">
-                                <h4><a href="service-details.html">Vehicle Detailing</a></h4>
-                                <p>
-                                    Explore our latest collection of new models from top manufacturers.
-                                </p>
-                                <a href="service-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
+                            <div class="content"> 
+                                <h4><a href="service-details.html">Social Media Marketing</a></h4>
+                                <p>Lorem dolor amet consectetur read adipiscing any more elit.</p>
+                                <a href="service-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="service-box-items">
-                            <div class="number">
-                                06
+                        <div class="service-box-items mt-0">
+                            <div class="icon">
+                                <img src="assets/img/service/icon-6.png" alt="img">
                             </div>
-                            <div class="content">
-                                <h4><a href="service-details.html">Custom Car Orders</a></h4>
-                                <p>
-                                    Explore our latest collection of new models from top manufacturers.
-                                </p>
-                                <a href="service-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-right"></i>
-                                </a>
+                            <div class="content"> 
+                                <h4><a href="service-details.html">Better audiences</a></h4>
+                                <p>Lorem dolor amet consectetur read adipiscing any more elit.</p>
+                                <a href="service-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
@@ -410,117 +431,312 @@
             </div>
         </section>
 
-        <!-- Feature Car Section Start -->
-        <section class="feature-car-section fix section-padding theme-bg">
-            <div class="car-shape">
-                <img src="assets/img/car-shape.png" alt="img">
+        <!-- Team Section Start -->
+        <section class="team-section fix section-padding bg-cover" style="background-image: url('assets/img/service/service-bg.jpg');">
+            <div class="shape-img float-bob-y">
+                <img src="assets/img/service/rocket-shape.png" alt="img">
+            </div>
+            <div class="shape-img-2 float-bob-y">
+                <img src="assets/img/service/right-shape-2.png" alt="img">
             </div>
             <div class="container">
-                <div class="feature-car-wrapper">
+                <div class="team-wrapper style-4">
                     <div class="row g-4 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="feature-car-content">
+                        <div class="col-xl-6">
+                            <div class="results-left-items">
+                               <div class="content">
+                                    <h2><span class="count">500</span>+</h2>
+                                    <h3>Total Project</h3>
+                                    <p>Lorem dolor amet consectetur adipiscing any more elit.</p>
+                               </div>
+                               <div class="thumb">
+                                    <img src="assets/img/service/gap-shape.png" alt="img">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="team-content">
                                 <div class="section-title">
-                                    <h6 class="wow fadeInUp">Features Car</h6>
-                                    <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                                        Sign Up and Never Miss a Deal Again
+                                    <div class="sub-title bg-color-2 wow fadeInUp">
+                                        <span>Best SEO results</span>
+                                    </div>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        Let’s make something awesome together
                                     </h2>
                                 </div>
-                                <p class="mt-3 mt-md-0 text-white wow fadeInUp" data-wow-delay=".5s">
-                                    We are committed to providing our customers with exceptional service, competitive pricing, and a wide range of vehicles to choose from.
+                                <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                    Every pleasure is to be welcomed and every pain avoided. certain circumstances and owing to the claims welcomed and every pain avoided certain circumstances
                                 </p>
-                                <div class="feature-button">
-                                    <a href="contact.html" class="theme-btn bg-white wow fadeInUp" data-wow-delay=".3s">Get Started <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
-                                    <div class="review-items wow fadeInUp" data-wow-delay=".5s">
-                                        <img src="assets/img/hero/client.png" alt="img">
-                                        <div class="content">
-                                            <h2><span class="count">1.5</span>k</h2>
-                                            <p class="text-white">Good Reviews</p>
-                                        </div>
-                                    </div>
+                                <div class="list-items wow fadeInUp" data-wow-delay=".3s">
+                                    <ul>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z" fill="#6A47ED"/>
+                                            </svg>
+                                            30-day money back guarantee
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z" fill="#6A47ED"/>
+                                            </svg>
+                                            Web site Marketing Solutions
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z" fill="#6A47ED"/>
+                                            </svg>
+                                            Unlimited Application
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z" fill="#6A47ED"/>
+                                            </svg>
+                                            24/7 system Monitoring
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                                    <a href="team.html"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="car-list-box style-2">
-                                <h3>Find Your Car</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section Start -->
+        <section class="pricing-section section-padding">
+            <div class="left-shape float-bob-y">
+                <img src="assets/img/pricing-left.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="pricing-content sticky-style">
+                            <div class="section-title">
+                                <div class="sub-title bg-color-2 wow fadeInUp">
+                                    <span>OUR PRICNG PLAN</span>
+                                </div>
+                                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                    Our awesome <br> Pricing Plan
+                                </h2>
+                            </div>
+                            <div class="pricing-tab-header mt-4 mt-md-0">
+                                <div class="arrow-shape">
+                                    <img src="assets/img/arrow.png" alt="img">
+                                </div>
+                                <ul class="nav" role="tablist">
+                                    <li class="nav-item wow fadeInUp" data-wow-delay=".3s" role="presentation">
+                                        <a href="#monthly" data-bs-toggle="tab" class="nav-link active" aria-selected="true" role="tab">
+                                        Monthly
+                                        </a>
+                                    </li>
+                                    <li class="nav-item wow fadeInUp" data-wow-delay=".5s" role="presentation">
+                                        <a href="#yearly" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
+                                        Yearly
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="save-text">
+                                    Save 25%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="tab-content">
+                            <div id="monthly" class="tab-pane fade show active" role="tabpanel">
                                 <div class="row g-4">
-                                    <div class="col-md-12">
-                                        <div class="form-clt">
-                                            <span>Branch</span>
-                                            <div class="nice-select" tabindex="0">
-                                               <span class="current">
-                                                    All Branch
-                                               </span>
-                                                <ul class="list">
-                                                    <li data-value="1" class="option selected focus">
-                                                        All Branch
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Branch 01
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Branch 02
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Branch 03
-                                                    </li>
-                                                </ul>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="pricing-box-items">
+                                            <div class="pricing-header">
+                                                <div class="content">
+                                                    <h4>Premium Plans</h4>
+                                                    <h2>$99 <sub>/ Month</sub></h2>
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="assets/img/cloud.png" alt="img">
+                                                </div>
                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-clt">
-                                            <span>Make</span>
-                                            <div class="nice-select" tabindex="0">
-                                               <span class="current">
-                                                    All Make
-                                               </span>
-                                                <ul class="list">
-                                                    <li data-value="1" class="option selected focus">
-                                                        All Make
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Style 01
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Style 02
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Style 03
-                                                    </li>
-                                                </ul>
+                                            <ul class="price-list">
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 100 GB SSD Storage</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Weekly Backups</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Unlimited Free SSL</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 24/7 system Monitoring</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Free Domain ($9.99 value)</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> Dedicated IP Address</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> 20+ Payment Methods</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                            </ul>
+                                            <div class="price-button">
+                                                <a href="pricing.html" class="theme-btn">Get Started Now <i class="fa-regular fa-arrow-right-long"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-clt">
-                                            <span>Model</span>
-                                            <div class="nice-select" tabindex="0">
-                                               <span class="current">
-                                                    All Model
-                                               </span>
-                                                <ul class="list">
-                                                    <li data-value="1" class="option selected focus">
-                                                        All Model
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Model 01
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Model 02
-                                                    </li>
-                                                    <li data-value="1" class="option">
-                                                        Model 03
-                                                    </li>
-                                                </ul>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="pricing-box-items style-2">
+                                            <div class="pricing-header">
+                                                <div class="content">
+                                                    <h4>Extended Plan</h4>
+                                                    <h2>$149 <sub>/ Month</sub></h2>
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="assets/img/cloud.png" alt="img">
+                                                </div>
                                             </div>
-                                         </div>
+                                            <ul class="price-list">
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 100 GB SSD Storage</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Weekly Backups</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Unlimited Free SSL</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 24/7 system Monitoring</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Free Domain ($9.99 value)</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> Dedicated IP Address</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> 20+ Payment Methods</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                            </ul>
+                                            <div class="price-button">
+                                                <a href="pricing.html" class="theme-btn">Get Started Now <i class="fa-regular fa-arrow-right-long"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <button type="submit" class="theme-btn">
-                                            SEARCH
-                                        </button>
+                                </div>
+                            </div>
+                            <div id="yearly" class="tab-pane fade" role="tabpanel">
+                                <div class="row g-4">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="pricing-box-items">
+                                            <div class="pricing-header">
+                                                <div class="content">
+                                                    <h4>Premium Plans</h4>
+                                                    <h2>$99 <sub>/ Month</sub></h2>
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="assets/img/cloud.png" alt="img">
+                                                </div>
+                                            </div>
+                                            <ul class="price-list">
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 100 GB SSD Storage</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Weekly Backups</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Unlimited Free SSL</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 24/7 system Monitoring</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Free Domain ($9.99 value)</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> Dedicated IP Address</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> 20+ Payment Methods</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                            </ul>
+                                            <div class="price-button">
+                                                <a href="pricing.html" class="theme-btn">Get Started Now <i class="fa-regular fa-arrow-right-long"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="pricing-box-items style-2">
+                                            <div class="pricing-header">
+                                                <div class="content">
+                                                    <h4>Extended Plan</h4>
+                                                    <h2>$149 <sub>/ Month</sub></h2>
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="assets/img/cloud.png" alt="img">
+                                                </div>
+                                            </div>
+                                            <ul class="price-list">
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 100 GB SSD Storage</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Weekly Backups</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Unlimited Free SSL</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> 24/7 system Monitoring</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1"><i class="fa-regular fa-check"></i> Free Domain ($9.99 value)</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> Dedicated IP Address</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                                <li>
+                                                    <span class="price-1 color-2"><i class="fa-solid fa-xmark"></i> 20+ Payment Methods</span>
+                                                    <span class="icon"><i class="fa-regular fa-circle-question"></i></span>
+                                                </li>
+                                            </ul>
+                                            <div class="price-button">
+                                                <a href="pricing.html" class="theme-btn">Get Started Now <i class="fa-regular fa-arrow-right-long"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -530,111 +746,100 @@
             </div>
         </section>
 
-         <!-- Testimonial Section Start -->
-         <section class="testimonial-section fix section-padding">
-            <div class="container custom-container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Testimonials</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">What Our Clients Say</h2>
+        <!-- Cta Contact Section Start -->
+        <section class="cta-contact-section pt-0 fix section-padding">
+            <div class="container">
+                <div class="cta-contact-wrapper bg-cover" style="background-image: url('assets/img/cta-contact-bg.jpg');">
+                    <div class="cta-image wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        <img src="assets/img/contact-img.png" alt="img">
                     </div>
-                    <p>
-                        These testimonials reflect positive customer <br> process, helping build trust and appeal for your car <br> showroom.
-                    </p>
+                    <div class="section-title mb-0">
+                        <div class="sub-title bg-color-3 wow fadeInUp">
+                            <span>Contact US</span>
+                        </div>
+                        <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
+                            24/7 Expert Hosting Support <br> Our Customers Love
+                        </h2>
+                    </div>
+                    <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                        <a href="contact.html"> <span class="theme-btn">Talk to a Specialist </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
+                    </div>
                 </div>
-                <div class="testimonial-wrapper-2 style-wrapper">
-                    <div class="swiper testimonial-slider-3">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-card-items">
-                                    <div class="client-info">
-                                        <img src="assets/img/testimonial/client-3.png" alt="img">
-                                        <div class="content">
-                                             <h4>Annette Black</h4>
-                                             <span>Business Development</span>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <div class="star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p>
-                                            I couldn’t be happier with my experience at RevAuto. The staff was knowledgeable, attentive, and made the entire process seamless. I found the transparent and easy to understand.
-                                        </p>
-                                    </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section Start -->
+        <section class="testimonial-section fix section-padding pt-0 bg-cover" style="background-image: url('assets/img/testimonial/testimonial-bg.jpg');">
+            <div class="container">
+                <div class="testimonial-wrapper-2">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="testimonial-image">
+                                <img src="assets/img/testimonial/03.png" alt="img" class="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                                <div class="rocket-shape">
+                                    <img src="assets/img/testimonial/rocket.png" alt="img">
+                                </div>
+                                <div class="msg-shape float-bob-y">
+                                    <img src="assets/img/testimonial/msg.png" alt="img">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card-items style-2">
-                                    <div class="testimonial-content">
-                                        <div class="star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p>
-                                            I couldn’t be happier with my experience at RevAuto. The staff was knowledgeable, attentive, and made the entire process seamless. I found the transparent and easy to understand.
-                                        </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="testimonial-content">
+                                <div class="section-title">
+                                    <div class="sub-title bg-color-2 wow fadeInUp">
+                                        <span>TESTIMONILAS</span>
                                     </div>
-                                    <div class="client-info">
-                                        <img src="assets/img/testimonial/client-4.png" alt="img">
-                                        <div class="content">
-                                             <h4>Savannah Nguyen</h4>
-                                             <span>Project Management</span>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        Your Marketing Solutions
+                                        Happy Clients Says?
+                                    </h2>
+                                </div>
+                                <div class="swiper testimonial-slider-3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-card-items">
+                                                <div class="client-info">
+                                                    <div class="client-img">
+                                                        <img src="assets/img/testimonial/04.png" alt="img">
+                                                    </div>
+                                                    <div class="client-content">
+                                                        <h5>Kathryn Murphy</h5>
+                                                        <span>Web Designer</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    There are many variations of passages of the Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                                </p>
+                                                <div class="icon">
+                                                    <img src="assets/img/testimonial/icon.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-card-items">
+                                                <div class="client-info">
+                                                    <div class="client-img">
+                                                        <img src="assets/img/testimonial/04.png" alt="img">
+                                                    </div>
+                                                    <div class="client-content">
+                                                        <h5>Kathryn Murphy</h5>
+                                                        <span>Web Designer</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    There are many variations of passages of the Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                                </p>
+                                                <div class="icon">
+                                                    <img src="assets/img/testimonial/icon.png" alt="img">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card-items">
-                                    <div class="client-info">
-                                        <img src="assets/img/testimonial/client-5.png" alt="img">
-                                        <div class="content">
-                                             <h4>Darrell Steward</h4>
-                                             <span>Marketing</span>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <div class="star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p>
-                                            I couldn’t be happier with my experience at RevAuto. The staff was knowledgeable, attentive, and made the entire process seamless. I found the transparent and easy to understand.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card-items style-2">
-                                    <div class="testimonial-content">
-                                        <div class="star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p>
-                                            I couldn’t be happier with my experience at RevAuto. The staff was knowledgeable, attentive, and made the entire process seamless. I found the transparent and easy to understand.
-                                        </p>
-                                    </div>
-                                    <div class="client-info">
-                                        <img src="assets/img/testimonial/client-6.png" alt="img">
-                                        <div class="content">
-                                             <h4>Arlene McCoy</h4>
-                                             <span>Programing</span>
-                                        </div>
-                                    </div>
+                                <div class="array-button">
+                                    <button class="array-prev"><i class="fa-regular fa-arrow-up-long"></i></button>
+                                    <button class="array-next"><i class="fa-regular fa-arrow-down-long"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -643,64 +848,87 @@
             </div>
         </section>
 
-        <!-- Fotter Section Start -->
-        <section class="footer-section fix bg-cover" style="background-image: url('assets/img/footer-bg.jpg');">
+        <!-- Cta Section Start -->
+        <section class="cta-section style-2 section-padding pb-0">
+            <div class="rokect-shape float-bob-y">
+                <img src="assets/img/rokect.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="cta-wrapper bg-cover" style="background-image: url('assets/img/cta-bg.jpg');">
+                    <div class="cta-img wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        <img src="assets/img/cta-img.png" alt="img">
+                    </div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        Stay Connected With <br> Cutting Edge IT
+                    </h2>
+                    <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                        <a href="contact.html"> <span class="theme-btn"> talk TO  A SPECIALIST </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Start -->
+        <section class="footer-section footer-bg fix">
             <div class="container">
                 <div class="footer-widgets-wrapper">
                     <div class="row">
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Utility Pages</h3>
+                                    <a href="index.html">
+                                        <img src="assets/img/logo/white-logo.svg" alt="img">
+                                    </a>
                                 </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="index.html">
-                                            Home 01
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html">
-                                            Home 02
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="home-landing.html">
-                                            Home 03
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">
-                                            About Us
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="footer-content">
+                                    <p>
+                                        Phasellus ultricies aliquam volutpat 
+                                        ullamcorper laoreet neque, a lacinia
+                                        curabitur lacinia mollis
+                                    </p>
+                                    <div class="social-icon d-flex align-items-center">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Explore</h3>
+                                    <h3>Quick Links</h3>
                                 </div>
-                                <ul class="list-items">
+                                <ul class="list-area">
+                                    <li>
+                                        <a href="about.html">
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Digtek About
+                                        </a>
+                                    </li>
                                     <li>
                                         <a href="service.html">
-                                            Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="project.html">
-                                            Portfolio
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">
-                                            Faq
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Our Services
                                         </a>
                                     </li>
                                     <li>
                                         <a href="news.html">
-                                            Our Blog
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Our Blogs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            FAQ’S
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <i class="fa-solid fa-chevrons-right"></i>
+                                            Contact Us
                                         </a>
                                     </li>
                                 </ul>
@@ -709,60 +937,107 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Find a car</h3>
+                                    <h3>Recent Posts</h3>
                                 </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="shop.html">
-                                            Our Shop
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="car.html">
-                                            Cart
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="checkout.html">
-                                            Checkout
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="recent-post-area">
+                                    <div class="recent-post-items">
+                                        <div class="thumb">
+                                            <img src="assets/img/news/pp1.jpg" alt="post-img">
+                                        </div>
+                                        <div class="content">
+                                            <ul class="post-date">
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days me-2"></i>
+                                                    20 Feb, 2024
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="news-details.html">
+                                                    Top 5 Most Famous <br>
+                                                    Technology Trend In 2024
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="recent-post-items mb-0">
+                                        <div class="thumb">
+                                            <img src="assets/img/news/pp2.jpg" alt="post-img">
+                                        </div>
+                                        <div class="content">
+                                            <ul class="post-date">
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days me-2"></i>
+                                                    15 Dec, 2024
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="news-details.html">
+                                                    The Surfing Man Will Blow <br>
+                                                    Your Mind   
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <h3>Get In Touch</h3>
+                                    <h3>Contact Us</h3>
                                 </div>
-                                <ul class="contact-list">
-                                    <li>
-                                        Valentin, Street Road 27, New
-                                        York. USA - 752252
-                                    </li>
-                                    <li>
-                                        <a href="tel:2395550108">(239) 555-0108</a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:info@example.com">info@example.com</a>
-                                    </li>
-                                </ul>
+                                <div class="footer-content">
+                                    <ul class="contact-info">
+                                        <li>
+                                            <i class="fa-regular fa-envelope"></i>
+                                            <a href="mailto:info@example.com">info@example.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                            <a href="tel:2086660112">+208-666-0112</a>
+                                        </li>
+                                    </ul>
+                                    <div class="footer-input">
+                                        <input type="email" id="email2" placeholder="Your email address">
+                                        <button class="newsletter-btn" type="submit">
+                                            <i class="fa-regular fa-arrow-right-long"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            I agree to the <a href="contact.html">Privacy Policy.</a>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom-wrapper">
-                    <p><a href="contact.html" class="wow fadeInUp" data-wow-delay=".3s">Terms of Use</a></p>
-                    <p class="wow fadeInUp" data-wow-delay=".5s">
-                        © 2024 Gramentheme. All rights reserved.
-                    </p>
-                    <p><a href="contact.html" class="wow fadeInUp" data-wow-delay=".7s">Privacy Policy</a></p>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                        <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
+                            © All Copyright 2024 by Digtek
+                        </p>
+                        <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
+                            <li>
+                                <a href="contact.html">
+                                    Terms & Condition       
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <a href="#" id="scrollUp" class="scroll-icon">
+                    <i class="far fa-arrow-up"></i>
+                </a>
             </div>
         </section>
         
@@ -786,6 +1061,8 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
+        <!--<< Circle Progress Js >>-->
+        <script src="assets/js/circle-progress.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
     </body>
