@@ -264,7 +264,7 @@ span {
 }
 .about-wrapper .about-image .box-shape {
   position: absolute;
-  right: 25px;
+  right: -225px;
   top: 32%;
 }
 @media (max-width: 575px) {
@@ -275,7 +275,7 @@ span {
 .about-wrapper .about-image .emoji-shape {
   position: absolute;
   top: 20%;
-  left: 164px;
+  left: -314px;
   animation: bounce-x 7s infinite linear;
 }
 @media (max-width: 575px) {
@@ -1317,7 +1317,7 @@ span {
 .contact-wrapper-2 .map-items .googpemap iframe {
   width: 100%;
   border-radius: 16px;
-  height: 660px;
+  height: 500px;
 }
 @media (max-width: 767px) {
   .contact-wrapper-2 .map-items .googpemap iframe {
@@ -2079,7 +2079,7 @@ span {
   font-weight: 600;
 }
 .audience-wrapper .audience-right .counter-box-area .content {
-  margin-top: 150px;
+  margin-top: 40px;
   max-width: 235px;
 }
 @media (max-width: 767px) {
@@ -2812,6 +2812,9 @@ span {
 .sticky.header-1 .header-logo {
   display: none;
 }
+.sticky.header-1 .search-trigger {
+  display: none;
+}
 .sticky.header-1 .header-right .sidebar__toggle {
   color: var(--header);
 }
@@ -3392,7 +3395,7 @@ span {
 .hero-1 .mike-shape {
   position: absolute;
   top: 20%;
-  left: 20px;
+  left: 1100px;
 }
 .hero-1 .mike-shape::before {
   position: absolute;
@@ -3675,7 +3678,7 @@ span {
   margin-bottom: 10px;
 }
 .hero-2 .hero-content h1 {
-  font-size: 72px;
+  font-size: 66px;
   color: var(--white);
 }
 @media (max-width: 575px) {
@@ -4125,7 +4128,7 @@ span {
   white-space: nowrap;
   display: flex;
   gap: 20px;
-  background-color: #141415;
+  /* background-color: #141415; */
   padding: 30px 0;
 }
 .scrolling-wrap.bg-2 {
@@ -4159,10 +4162,10 @@ span {
 }
 .scrolling-wrap .comm .cmn-textslide {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 32px;
   text-transform: uppercase;
-  color: var(--white);
+  color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 .scrolling-wrap:hover .comm {
@@ -5308,7 +5311,7 @@ input.main-search-input::placeholder {
   }
 }
 .case-study-wrapper .main-box .box {
-  background-image: url(../../assets/img/case-studies/05.jpg);
+  background-image: url(../../assets/img/case-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5935,6 +5938,26 @@ input.main-search-input::placeholder {
 .section-title .sub-title.bg-color-2 {
   background: rgba(56, 75, 255, 0.1);
 }
+.paket-harga {
+  padding: 6px 20px;
+  border-radius: 100px;
+  display: inline-block;
+  background: var(--bg);
+  margin-top: 10px;
+}
+.paket-harga span {
+  background: linear-gradient(90deg, #240CF2 0%, #00A9B5 100%);
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+}
+.paket-harga.bg-color-2 {
+  background: rgba(56, 75, 255, 0.1);
+}
 .section-title .sub-title.bg-color-3 {
   background: rgba(246, 243, 254, 0.1);
 }
@@ -6459,6 +6482,7 @@ input.main-search-input::placeholder {
 }
 
 .team-section {
+  /* background-color: #F6F3FE; */
   position: relative;
 }
 .team-section .shape-img {

@@ -279,6 +279,7 @@ input.main-search-input::placeholder {
     display: inline-block;
     z-index: 999;
     right: 30px;
+    // right: 90px;
     bottom: 30px;
     @include transition;
     opacity: 0;

@@ -8236,8 +8236,14 @@ fieldset:disabled .btn {
     --bs-border-opacity: 1
 }
 
+.w-10 {
+    width: 10% !important
+}
 .w-25 {
     width: 25% !important
+}
+.w-40 {
+    width: 40% !important
 }
 
 .w-50 {
@@ -8593,7 +8599,9 @@ fieldset:disabled .btn {
 .mt-5 {
     margin-top: 3rem !important
 }
-
+.mt-6 {
+    margin-top: 6rem !important
+}
 .mt-auto {
     margin-top: auto !important
 }
@@ -8788,6 +8796,9 @@ fieldset:disabled .btn {
 
 .pt-5 {
     padding-top: 3rem !important
+}
+.pt-6 {
+    padding-top: 5rem !important
 }
 
 .pe-0 {
