@@ -12,12 +12,21 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
+  --theme: #228B22;
+  --theme2: rgb(237, 176, 71);
+  --header:rgb(0, 20, 1);
+  --text: #504E4E;
+  --border: #E5E5E5;
+  --bg:rgb(254, 249, 243);
+  /* --body: #fff;
+  --black: #000;
+  --white: #fff;
   --theme: #6A47ED;
   --theme2: #C6F806;
   --header: #17012C;
   --text: #504E4E;
   --border: #E5E5E5;
-  --bg: #F6F3FE;
+  --bg: #F6F3FE; */
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -365,7 +374,7 @@ span {
   color: var(--header);
 }
 .about-wrapper .about-content .circle-progress-bar-wrapper .single-circle-bar .circle-bar .background {
-  background-color: #DFE2FF !important;
+  background-color:rgb(255, 249, 223) !important;
 }
 .about-wrapper .about-content .circle-progress-bar-wrapper .single-circle-bar .circle-bar .rotate {
   clip: rect(0 50px 100px 0);
@@ -1473,7 +1482,7 @@ span {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: #18185E;
+  background-color: #E67E22 ;
   top: 60%;
   height: initial;
 }
@@ -5045,7 +5054,7 @@ input.main-search-input::placeholder {
 }
 .pricing-box-items .pricing-header {
   border-radius: 16px;
-  background: #17012C;
+  background:#228B22;
   padding: 24px;
   position: relative;
 }
@@ -5097,7 +5106,7 @@ input.main-search-input::placeholder {
   width: 100%;
   padding: 12px 20px;
   border-radius: 16px;
-  background: #17012C;
+  background: #228B22;
   display: inline-block;
   color: var(--white);
   font-weight: 700;
@@ -5109,7 +5118,7 @@ input.main-search-input::placeholder {
   background-color: var(--theme);
 }
 .pricing-box-items.style-2 .pricing-header {
-  background: #6A47ED;
+  background:rgb(237, 176, 71);
 }
 .pricing-box-items.style-2 .price-button .theme-btn {
   border: 1.5px solid var(--theme);
@@ -5926,7 +5935,7 @@ input.main-search-input::placeholder {
   margin-bottom: 20px;
 }
 .section-title .sub-title span {
-  background: linear-gradient(90deg, #240CF2 0%, #00A9B5 100%);
+  background: linear-gradient(90deg, #228B22  0%, #FFB347  100%);
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
@@ -6012,7 +6021,8 @@ input.main-search-input::placeholder {
 }
 
 .footer-bg {
-  background-color: #18185E;
+  background-color: #FF9F45;
+  /* background-color: #18185E; */
 }
 
 .section-padding {
