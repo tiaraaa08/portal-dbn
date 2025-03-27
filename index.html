@@ -43,8 +43,8 @@
         <div class="spinner"></div>
         <div class="txt-loading">
           <span data-text-preloader="D" class="letters-loading"> D </span>
-          <span data-text-preloader="I" class="letters-loading"> B </span>
-          <span data-text-preloader="G" class="letters-loading"> N </span>
+          <span data-text-preloader="B" class="letters-loading"> B </span>
+          <span data-text-preloader="N" class="letters-loading"> N </span>
         </div>
         <p class="text-center">Loading</p>
       </div>
@@ -85,7 +85,15 @@
             >
               <div class="offcanvas__logo">
                 <a href="index.html">
-                  <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                  <img
+                    src="assets/img/dbn.svg"
+                    alt="logo-img"
+                    style="
+                      filter: drop-shadow(
+                        5px 5px 10px rgba(255, 255, 255, 0.5)
+                      );
+                    "
+                  />
                 </a>
               </div>
               <div class="offcanvas__close">
@@ -95,9 +103,8 @@
               </div>
             </div>
             <p class="text d-none d-xl-block">
-              Nullam dignissim, ante scelerisque the is euismod fermentum odio
-              sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
-              a imperdiet risus.
+              DBN menghadirkan solusi internet, pemasangan CCTV, dan layanan IT
+              terpercaya untuk konektivitas yang lebih aman dan lancar
             </p>
             <div class="mobile-menu fix mb-3"></div>
             <div class="offcanvas__contact">
@@ -170,10 +177,16 @@
           <div class="header-main">
             <div class="logo">
               <a href="index.html" class="header-logo">
-                <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                <img
+                  src="assets/img/dbn.svg"
+                  alt="logo-img"
+                  style="
+                    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.5));
+                  "
+                />
               </a>
               <a href="index.html" class="header-logo-2">
-                <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                <img src="assets/img/dbn.svg" alt="logo-img" />
               </a>
             </div>
             <div class="mean__menu-wrapper">
@@ -190,25 +203,14 @@
                       <a href="#tentangKami"> Tentang Kami </a>
                     </li>
                     <li class="has-dropdown">
-                      <a href="#layanan"> Layanan & Paket</a>
-                      <!-- <ul class="submenu">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="team-details.html">Team Details</a></li>
-                        <li><a href="pricing.html">Our Pricing</a></li>
-                        <li><a href="faq.html">Our Faq</a></li>
-                        <li><a href="404.html">404 Page</a></li>
-                      </ul> -->
+                      <a href="#layananPaket"> Layanan & Paket</a>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a href="#faq"> Faq's </a>
-                    </li>
+                    </li> -->
                     <li>
                       <a href="#kontakKami"> Kontak Kami</a>
                     </li>
-                    <!-- <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li> -->
                   </ul>
                 </nav>
               </div>
@@ -219,13 +221,6 @@
               <a href="#0" class="search-trigger search-icon"
                 ><i class="fa-regular fa-magnifying-glass"></i
               ></a>
-              <div class="main-button">
-                <a href="contact.html">
-                  <span class="theme-btn"> Dapatkan Layanan </span
-                  ><span class="arrow-btn"
-                    ><i class="fa-regular fa-arrow-up-right"></i></span
-                ></a>
-              </div>
               <div class="header__hamburger d-xl-none my-auto">
                 <div class="sidebar__toggle">
                   <i class="fas fa-bars"></i>
@@ -247,7 +242,7 @@
               <input
                 type="search"
                 class="main-search-input"
-                placeholder="Cari Sesuatu ?"
+                placeholder="Search..."
               />
             </div>
           </form>
@@ -255,78 +250,264 @@
       </div>
     </div>
 
-    <!-- Hero Section Start -->
     <div id="beranda">
+      <!-- Hero Section Start -->
       <section
-        class="hero-section hero-2"
-        style="background-image: url('assets/img/hero/hero-bg-2.png')"
+        class="hero-section fix hero-1 bg-cover"
+        style="
+          background: linear-gradient(#b0ffb0a2, #1d761d),
+            url('assets/img/hero/hero-bg.jpg');
+          background-size: cover;
+          background-position: center;
+        "
       >
-        <div class="trophy-shape">
-          <img src="assets/img/hero/trophy-shape.png" alt="img" />
+        <div class="arrow-shape">
+          <img src="assets/img/hero/arrow-shape.png" alt="img" />
         </div>
-        <div class="left-shape">
-          <img src="assets/img/hero/left-shape.png" alt="img" />
+        <div class="arrow-shape-2">
+          <img src="assets/img/hero/arrow-shape.png" alt="img" />
         </div>
-        <div class="right-shape">
-          <img src="assets/img/hero/right-shape.png" alt="img" />
-        </div>
-        <div class="rocket-shape float-bob-y">
-          <img src="assets/img/hero/rocket-2.png" alt="img" />
+        <div class="rocket-shape">
+          <img src="assets/img/hero/rocket.png" alt="img" class="float-bob-y" />
         </div>
         <div class="container-fluid">
-          <div class="row g-4 justify-content-between align-items-center">
-            <div class="col-lg-6">
+          <div class="row g-4 align-items-center">
+            <div class="col-xl-5 col-lg-6">
               <div class="hero-content">
-                <h6 class="wow fadeInUp">Koneksi Tanpa Batas​</h6>
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">
-                  Jaringan Andal, Performa Optimal
+                <span
+                  class="wow img-custom-anim-left"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.2s"
+                  >Koneksi Tanpa Batas</span
+                >
+                <h1
+                  class="wow img-custom-anim-right"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.2s"
+                >
+                  Cepat, tak terbatas.
                 </h1>
-                <p class="wow fadeInUp" data-wow-delay=".5s">
-                  Solusi internet stabil & cepat untuk produktivitas tanpa
-                  hambatan. Bersama PT Data Buana Nusantara, nikmati layanan
-                  internet berkecepatan tinggi yang didukung teknologi terbaik
-                  demi konektivitas optimal bagi bisnis Anda.
+                <p class="wow fadeInUp" data-wow-delay=".3s">
+                  Tetap terhubung tanpa batasan, nikmati kecepatan dan keandalan
+                  terbaik untuk semua kebutuhan digital Anda.
                 </p>
-                <div class="hero-button">
-                  <div
-                    class="main-button main-button-lihatSelengkapnya wow fadeInUp"
-                    data-wow-delay=".3s"
-                  >
-                    <a href="about.html">
-                      <span class="theme-btn">Lihat selengkapnya </span
-                      ><span class="arrow-btn"
-                        ><i class="fa-regular fa-arrow-up-right"></i></span
-                    ></a>
-                  </div>
-                </div>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-xl-4 col-lg-6">
               <div class="hero-image">
                 <img
-                  src="assets/img/hero/hero-image-2.png"
+                  src="assets/img/13.png"
                   alt="img"
                   class="wow img-custom-anim-left"
                   data-wow-duration="1.5s"
                   data-wow-delay="0.3s"
                 />
                 <div class="bg-shape">
-                  <img src="assets/img/hero/bg-shape-2.png" alt="img" />
+                  <img src="assets/img/hero/bg-shape.png" alt="img" />
                 </div>
-                <div class="box-shape">
-                  <img src="assets/img/hero/box-shape.png" alt="img" />
-                </div>
-                <div class="gap-shape">
-                  <img src="assets/img/hero/gap-box.png" alt="img" />
-                </div>
-                <div class="cursor-shape">
-                  <img src="assets/img/hero/cursor.png" alt="img" />
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="video-right">
+                <!-- <a
+                  href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
+                  class="video-btn video-popup wow fadeInUp"
+                  data-wow-delay=".3s"
+                >
+                  <i class="fa-duotone fa-play"></i>
+                  <img src="assets/img/hero/text-circle.png" alt="img" />
+                </a> -->
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Solusi koneksi tanpa hambatan, memastikan akses cepat dan
+                  stabil kapan saja, di mana saja.
+                </p>
+                <div class="client-items wow fadeInUp" data-wow-delay=".7s">
+                  <div class="client-logo"></div>
+                  <div class="client-img">
+                    <img
+                      src="assets/img/client.png"
+                      class="w-50"
+                      alt="img"
+                      style="filter: drop-shadow(0 0 3px #ffffff)"
+                    />
+                    <div class="star-icon">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <span>150+ reviews</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="brand-wrapper-2">
+      </section>
+
+      <!-- Marque Section Start -->
+      <div class="marquee-section-1">
+        <div class="mycustom-marque style-2">
+          <div
+            class="scrolling-wrap"
+            style="background-color: rgb(254, 255, 251)"
+          >
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mycustom-marque style-3" style="background-color: #e9ad58">
+          <div class="scrolling-wrap">
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+            <div class="comm">
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+              <div class="cmn-textslide">
+                <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tentangKami">
+      <!-- About Section Start -->
+      <section class="about-section fix section-padding">
+        <div class="left-shape float-bob-y">
+          <img src="assets/img/about/left-shape.png" alt="img" />
+        </div>
+        <div class="container">
+          <!-- <div class="brand-wrapper">
           <h4 class="brand-title">1k + Brands Trust Us</h4>
           <div class="swiper brand-slider">
             <div class="swiper-wrapper">
@@ -353,433 +534,1404 @@
             </div>
           </div>
         </div> -->
-      </section>
-    </div>
-
-    <!-- Brand Section Start -->
-    <!-- <div class="brand-section-22">
-      <div class="container">
-        <div class="brand-wrapper-2">
-          <h4 class="brand-title">1k + Brands Trust Us</h4>
-          <div class="swiper brand-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/01.png" alt="img" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/02.png" alt="img" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/03.png" alt="img" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/04.png" alt="img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Feature Section Start -->
-    <section class="feature-secton section-padding fix">
-      <div class="bg-shape">
-        <img src="assets/img/bg-shape-2.png" alt="img" />
-      </div>
-      <div class="container">
-        <div class="section-title-area">
-          <div class="section-title">
-            <div class="sub-title wow fadeInUp">
-              <span>Layanan</span>
-            </div>
-            <h2 class="wow fadeInUp" data-wow-delay=".3s">
-              Jelajahi layanan kami untuk konektivitas optimal.
-            </h2>
-          </div>
-          <p class="wow fadeInUp" data-wow-delay=".5s">
-            Solusi konektivitas terdepan dengan jaringan <br />stabil, kecepatan
-            optimal, dan dukungan infrastruktur canggih untuk bisnis maupun
-            individu.
-          </p>
-        </div>
-        <div class="row">
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".2s"
-          >
-            <div class="feature-box-items">
-              <div class="icon">
-                <i class="icon-01"></i>
-              </div>
-              <div class="content">
-                <h3>Internet Akses</h3>
-                <p>
-                  Menyediakan koneksi internet cepat dan stabil untuk mendukung
-                  aktivitas online Anda.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".4s"
-          >
-            <div class="feature-box-items">
-              <div class="icon">
-                <i class="icon-02"></i>
-              </div>
-              <div class="content">
-                <h3>Colocation</h3>
-                <p>
-                  Layanan penempatan server Anda di data center kami yang aman
-                  dan andal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".6s"
-          >
-            <div class="feature-box-items">
-              <div class="icon">
-                <i class="icon-03"></i>
-              </div>
-              <div class="content">
-                <h3>Interkoneksi</h3>
-                <p>
-                  Memfasilitasi koneksi antar jaringan untuk memastikan
-                  komunikasi data yang efisien.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".8s"
-          >
-            <div
-              class="feature-box-image bg-cover"
-              style="background-image: url('assets/img/feature-bg.jpg')"
-            >
-              <img src="assets/img/feature-img.png" alt="img" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".8s"
-          >
-            <div
-              class="feature-box-image bg-cover"
-              style="background-image: url('assets/img/feature-bg.jpg')"
-            >
-              <img src="assets/img/feature-img.png" alt="img" />
-            </div>
-          </div>
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".2s"
-          >
-            <div class="feature-box-items">
-              <div class="icon">
-                <i class="icon-01"></i>
-              </div>
-              <div class="content">
-                <h3>Fiber To The Home</h3>
-                <p>
-                  Koneksi internet serat optik langsung ke rumah untuk kecepatan
-                  optimal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".4s"
-          >
-            <div class="feature-box-items">
-              <div class="icon">
-                <i class="icon-02"></i>
-              </div>
-              <div class="content">
-                <h3>VPN-Remote</h3>
-                <p>
-                  Layanan Virtual Private Network untuk akses aman ke jaringan
-                  pribadi Anda dari lokasi manapun.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay=".6s"
-          >
-            <div class="feature-box-items">
-              <div class="icon">
-                <i class="icon-03"></i>
-              </div>
-              <div class="content">
-                <h3>Data Center</h3>
-                <p>
-                  Fasilitas penyimpanan data yang aman dan terpercaya untuk
-                  kebutuhan bisnis Anda.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Service Section Start -->
-    <section class="service-section fix section-bg section-padding pt-6">
-      <div class="bg-shape-2">
-        <img src="assets/img/service/bg-shape-2.png" alt="img" />
-      </div>
-      <div class="container">
-        <div class="section-title-area">
-          <div class="section-title">
-            <div class="sub-title bg-color-2 wow fadeInUp">
-              <span>Paket</span>
-            </div>
-            <h2 class="wow fadeInUp" data-wow-delay=".3s">
-              Beragam Paket Internet,<br />
-              Sesuai Kebutuhan
-            </h2>
-          </div>
-          <div class="main-button wow fadeInUp" data-wow-delay=".3s">
-            <a href="service.html">
-              <span class="theme-btn">Lihat seluruh paket </span
-              ><span class="arrow-btn"
-                ><i class="fa-regular fa-arrow-up-right"></i></span
-            ></a>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-            data-wow-delay=".3s"
-          >
-            <div class="service-card-items">
-              <h3 class="title">
-                <a href="service-details.html"> PAKET HOME PRO 150 </a>
-              </h3>
-              <div class="service-thumb">
-                <img src="assets/img/service/03.png" alt="img" />
-              </div>
-              <div class="content">
-                <p>
-                    PAKET INTERNET 150.000 ( Up to 10 Mbps )
-                    <div class="paket-harga bg-color-2">
-                      <span>RP 150.000</span>
-                    </div>
-                </p>
-                <a href="service-details.html" class="service-btn"
-                  >Langganan Sekarang <i class="fa-solid fa-chevrons-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-            data-wow-delay=".7s"
-          >
-            <div class="service-card-items">
-              <h3 class="title">
-                <a href="service-details.html"> PAKET BISNIS BASIC 200 </a>
-              </h3>
-              <div class="service-thumb">
-                <img src="assets/img/service/03.png" alt="img" />
-              </div>
-              <div class="content">
-                <p>
-                    PAKET BISNIS 200.000 ( Up to 15 Mbps )
-                    <div class="paket-harga bg-color-2">
-                        <span>RP 200.000</span>
-                      </div>
-                </p>
-                <a href="service-details.html" class="service-btn"
-                  >Langganan Sekarang <i class="fa-solid fa-chevrons-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-            data-wow-delay=".5s"
-          >
-            <div class="service-card-items">
-              <h3 class="title">
-                <a href="service-details.html"> PAKET BISNIS PRO 300</a>
-              </h3>
-              <div class="service-thumb">
-                <img src="assets/img/service/03.png" alt="img" />
-              </div>
-              <div class="content">
-                <p>
-                    PAKET BISNIS PRO 300.000 ( Up to 18 Mbps )
-                    <div class="paket-harga bg-color-2">
-                        <span>RP 300.000</span>
-                      </div>
-                </p>
-                <a href="service-details.html" class="service-btn"
-                  >Langganan Sekarang <i class="fa-solid fa-chevrons-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cta Marketing Section Start -->
-    <!-- <section class="cta-marketing section-padding pt-0">
-      <div class="shape-img float-bob-y">
-        <img src="assets/img/service/rocket-shape.png" alt="img" />
-      </div>
-      <div class="container">
-        <div class="cta-marketing-wrapper">
-          <div class="content">
-            <div class="section-title">
-              <div class="sub-title bg-color-3 wow fadeInUp">
-                <span>Free Marketing</span>
-              </div>
-              <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                Free digital marketing
-              </h2>
-            </div>
-            <ul class="list mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
-                    fill="white"
-                  />
-                </svg>
-                Digital marketing
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
-                    fill="white"
-                  />
-                </svg>
-                ECO optimization
-              </li>
-            </ul>
-          </div>
-          <div class="cta-input wow fadeInUp" data-wow-delay=".3s">
-            <input type="email" id="email" placeholder="Your email address" />
-            <button class="newsletter-btn" type="submit">
-              <i class="fa-regular fa-arrow-right-long"></i>
-            </button>
-          </div>
-          <div
-            class="cta-marketing-image wow img-custom-anim-right"
-            data-wow-duration="1.5s"
-            data-wow-delay="0.3s"
-          >
-            <img src="assets/img/cta-marketing.png" alt="img" />
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <div id="tentangKami">
-      <section class="about-section-2 fix section-padding pt-6">
-        <div class="bg-shape">
-          <img src="assets/img/about/bg-shape-2.png" alt="img" />
-        </div>
-        <div class="right-shape float-bob-x">
-          <img src="assets/img/case-studies/right-shaape.png" alt="img" />
-        </div>
-        <div class="container">
-          <div class="about-wrapper-2">
+          <div class="about-wrapper">
             <div class="row g-4">
               <div class="col-lg-6">
                 <div class="about-image">
                   <img
-                    src="assets/img/about/01.jpg"
+                    src="assets/img/46.png"
                     alt="img"
-                    class="wow img-custom-anim-left"
+                    class="wow img-custom-anim-left w-75"
                     data-wow-duration="1.5s"
                     data-wow-delay="0.3s"
                   />
+                  <div class="bg-shape">
+                    <img src="assets/img/about/bg-shape.png" alt="img" />
+                  </div>
+                  <div class="grap-shape float-bob-x">
+                    <img src="assets/img/about/grap.png" alt="img" />
+                  </div>
                   <div class="box-shape float-bob-y">
-                    <img src="assets/img/about/box-shape-2.png" alt="img" />
+                    <img src="assets/img/icon-3.png" alt="img" class="w-10" />
                   </div>
-                  <div class="gap-shape float-bob-x">
-                    <img src="assets/img/about/grap-2.png" alt="img" />
+                  <div class="emoji-shape">
+                    <img src="assets/img/icon-4.png" alt="img" class="w-10" />
                   </div>
-                  <a href="about.html" class="circle-button">
-                    <i class="fa-regular fa-arrow-up-right"></i>
-                    <span class="text-circle">
-                      <img src="assets/img/about/white-text.png" alt="img" />
-                    </span>
-                  </a>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="about-content">
                   <div class="section-title">
                     <div class="sub-title bg-color-2 wow fadeInUp">
-                      <!-- <span>About Company</span> -->
+                      <!-- <span>ABOUT COMPANY</span> -->
                     </div>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s">
                       Tentang PT Data Buana Nusantara
                     </h2>
                   </div>
                   <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                    Pusat layanan dan informasi jaringan terbaik dari PT DBN,
-                    menghadirkan solusi internet cepat, stabil, dan aman untuk
-                    mendukung konektivitas bisnis Anda.
+                    <u> PT Data Buana Nusantara (DBN)</u> adalah penyedia
+                    layanan telekomunikasi yang berfokus pada internet
+                    berkecepatan tinggi, co-location, dan solusi jaringan.
+                    Dengan infrastruktur yang andal, kami berkomitmen untuk
+                    memberikan layanan terbaik bagi pelanggan di Indonesia. Kami
+                    terus berinovasi dalam menyediakan konektivitas yang stabil,
+                    aman, dan berkinerja tinggi untuk mendukung kebutuhan bisnis
+                    maupun individu.
                   </p>
-                  <div class="icon-items-area">
-                    <div class="icon-items wow fadeInUp" data-wow-delay=".3s">
-                      <div class="icon">
-                        <i class="icon-01"></i>
-                      </div>
+                  <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                    Didukung oleh tim profesional dan teknologi mutakhir, DBN
+                    hadir sebagai solusi terpercaya dalam menjawab tantangan era
+                    digital dengan layanan yang cepat, responsif, dan terjangkau
+                    di berbagai wilayah.
+                  </p>
+                  <div class="circle-progress-bar-wrapper">
+                    <div
+                      class="single-circle-bar wow fadeInUp"
+                      data-wow-delay=".3s"
+                    >
+                      <div
+                        class="circle-bar"
+                        data-percent="90"
+                        data-duration="2000"
+                      ></div>
                       <div class="content">
-                        <h3>Tim Kompeten & Terarah</h3>
+                        <h6>Kecakapan <br />Tim</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="single-circle-bar wow fadeInUp"
+                      data-wow-delay=".5s"
+                    >
+                      <div
+                        class="circle-bar"
+                        data-percent="95"
+                        data-duration="2000"
+                      ></div>
+                      <div class="content">
+                        <h6>
+                          Efisiensi<br />
+                          Operasional
+                        </h6>
+                      </div>
+                    </div>
+                    <!-- <div
+                      class="single-circle-bar wow fadeInUp"
+                      data-wow-delay=".3s"
+                    >
+                      <div
+                        class="circle-bar"
+                        data-percent="97"
+                        data-duration="2000"
+                      ></div>
+                      <div class="content">
+                        <h6>Kepuasan <br />Pelanggan</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="single-circle-bar wow fadeInUp"
+                      data-wow-delay=".5s"
+                    >
+                      <div
+                        class="circle-bar"
+                        data-percent="95"
+                        data-duration="2000"
+                      ></div>
+                      <div class="content">
+                        <h6>
+                          Kestabilan<br />
+                          Performa
+                        </h6>
+                      </div>
+                    </div> -->
+                  </div>
+                  <!-- <div class="main-button wow fadeInUp" data-wow-delay=".3s">
+                    <a href="about.html">
+                      <span class="theme-btn"> Lebih Lanjut </span
+                      ><span class="arrow-btn"
+                        ><i class="fa-regular fa-arrow-up-right"></i></span
+                    ></a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Section Start -->
+      <section class="service-section fix section-padding">
+        <div class="left-shape float-bob-y">
+          <img src="assets/img/service/left-shape.png" alt="img" />
+        </div>
+        <div class="right-shape">
+          <img src="assets/img/service/right-shape.png" alt="img" />
+        </div>
+        <div class="bg-shape">
+          <img src="assets/img/service/bg-shape.png" alt="img" />
+        </div>
+        <div class="container">
+          <div class="section-title-area">
+            <div class="section-title">
+              <div class="sub-title wow fadeInUp">
+                <span>Mengapa harus memilih kami?</span>
+              </div>
+              <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Dukungan Profesional,<br />
+                Kepuasan Maksimal
+              </h2>
+            </div>
+            <p class="wow fadeInUp" data-wow-delay=".5s">
+              Kami menghadirkan solusi jaringan yang andal, <br />cepat, dan
+              aman untuk kebutuhan Anda.
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div class="service-box-items">
+                <div class="icon">
+                  <img
+                    src="assets/img/icon-8.png"
+                    style="
+                      margin-left: -10px;
+                      width: 150%;
+                      height: auto;
+                      max-width: 90px;
+                      object-fit: contain;
+                    "
+                    alt="img"
+                  />
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="service-details.html">Penyedia layanan internet</a>
+                  </h4>
+                  <p>
+                    Koneksi cepat dan stabil untuk semua kebutuhan digital Anda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".5s"
+            >
+              <div class="service-box-items">
+                <div class="icon">
+                  <img
+                    src="assets/img/icon-6.png"
+                    style="
+                      margin-left: -10px;
+                      width: 150%;
+                      height: auto;
+                      max-width: 90px;
+                      object-fit: contain;
+                    "
+                    alt="img"
+                  />
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="service-details.html"
+                      >Pemasangan CCTV & Solusi IT</a
+                    >
+                  </h4>
+                  <p>Keamanan dan teknologi terintegrasi dalam satu layanan.</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".7s"
+            >
+              <div class="service-box-items">
+                <div class="icon">
+                  <img
+                    src="assets/img/icon-2.png"
+                    style="
+                      margin-left: -10px;
+                      width: 150%;
+                      height: auto;
+                      max-width: 90px;
+                      object-fit: contain;
+                    "
+                    alt="img"
+                  />
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="service-details.html">Colocation & Data Center</a>
+                  </h4>
+                  <p>Penyimpanan data aman dengan performa optimal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div class="service-box-items">
+                <div class="icon">
+                  <img
+                    src="assets/img/24.png"
+                    style="
+                      margin-left: -10px;
+                      width: 150%;
+                      height: auto;
+                      max-width: 90px;
+                      object-fit: contain;
+                    "
+                    alt="img"
+                  />
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="service-details.html">24/7 Live Support</a>
+                  </h4>
+                  <p>
+                    Kami melakukan monitoring dan memberikan layanan live
+                    support, termasuk hari besar/hari libur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".5s"
+            >
+              <div class="service-box-items">
+                <div class="icon">
+                  <img
+                    src="assets/img/25.png"
+                    style="
+                      margin-left: -10px;
+                      width: 150%;
+                      height: auto;
+                      max-width: 90px;
+                      object-fit: contain;
+                    "
+                    alt="img"
+                  />
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="service-details.html">VPN-Remote</a>
+                  </h4>
+                  <p>
+                    Akses aman dan terenkripsi untuk koneksi jarak jauh tanpa
+                    batas. Lindungi data dan privasi di mana saja, kapan saja.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Study Section Start -->
+      <!-- <section class="case-study-section fix section-padding">
+        <div class="overlay-shape">
+          <img src="assets/img/case-studies/overlay-shape.png" alt="img" />
+        </div>
+        <div class="left-shape float-bob-x">
+          <img src="assets/img/case-studies/left-shape.png" alt="img" />
+        </div>
+        <div class="right-shape float-bob-x">
+          <img src="assets/img/case-studies/right-shaape.png" alt="img" />
+        </div>
+        <div class="container">
+          <div class="section-title-area">
+            <div class="section-title">
+              <div class="sub-title wow fadeInUp">
+                <span>Solusi dalam Aksi</span>
+              </div>
+              <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Dari masalah ke solusi - lihat <br />
+                bagaimana kami bekerja.
+              </h2>
+            </div>
+            <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+              <a href="about.html">
+                <span class="theme-btn"> EXPLORE MORE </span
+                ><span class="arrow-btn"
+                  ><i class="fa-regular fa-arrow-up-right"></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="case-study-wrapper">
+            <div class="row">
+              <div class="col-xxl-6 wow fadeInUp">
+                <div class="case-study-box-items">
+                  <div class="thumb">
+                    <img src="assets/img/case-1.jpg" alt="img" />
+                    <div class="post-box-items">
+                      <ul>
+                        <li>
+                          <a href="project-details.html"
+                            >Connected
+                            <i class="fa-regular fa-arrow-up-right"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="project-details.html"
+                            >Reliable
+                            <i class="fa-regular fa-arrow-up-right"></i
+                          ></a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <a href="project-details.html"
+                            >Trusted <i class="fa-regular fa-arrow-up-right"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 class="project-title">
+                      <a href="project-details.html">
+                        <img src="assets/img/case-studies/icon.png" alt="img" />
+                        Pemasangan WiFi Publik di Pusat Kota Blitar
+                      </a>
+                    </h3>
+                    <span class="number">01</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-6">
+                <div class="main-box">
+                  <div class="box wow fadeInUp">
+                    <div class="title-items">
+                      <h3>
+                        <a href="project-details.html"
+                          >Penyediaan Colocation Server</a
+                        >
+                      </h3>
+                      <span class="number">02</span>
+                    </div>
+                    <span class="number-hover">02</span>
+                    <div class="project-content">
+                      <h3>
+                        <a href="project-details.html"
+                          >Penyediaan Colocation Server</a
+                        >
+                      </h3>
+                      <p>
+                        Membantu UMKM dalam hosting website dan penyimpanan data
+                        dengan solusi colocation server yang aman dan efisien.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="box bg-1 wow fadeInUp wow" data-wow-delay=".2s">
+                    <div class="title-items">
+                      <h3>
+                        <a href="project-details.html"
+                          >Pemasangan CCTV dan Keamanan Digital</a
+                        >
+                      </h3>
+                      <span class="number">03</span>
+                    </div>
+                    <span class="number-hover">03</span>
+                    <div class="project-content">
+                      <h3>
+                        <a href="project-details.html"
+                          >Pemasangan CCTV dan Keamanan Digital</a
+                        >
+                      </h3>
+                      <p>
+                        DBN mengintegrasikan sistem CCTV & jaringan IT untuk
+                        meningkatkan keamanan dan efisiensi operasional sekolah.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box bg-2 active wow fadeInUp wow"
+                    data-wow-delay=".4s"
+                  >
+                    <div class="title-items">
+                      <h3>
+                        <a href="project-details.html">
+                          Interkoneksi Jaringan</a
+                        >
+                      </h3>
+                      <span class="number">04</span>
+                    </div>
+                    <span class="number-hover">04</span>
+                    <div class="project-content">
+                      <h3>
+                        <a href="project-details.html">
+                          Interkoneksi Jaringan</a
+                        >
+                      </h3>
+                      <p>
+                        DBN membangun jaringan VPN-Remote agar data antar cabang
+                        bisa diakses dengan cepat dan aman tanpa risiko
+                        keamanan.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="box bg-3 wow fadeInUp wow" data-wow-delay=".6s">
+                    <div class="title-items">
+                      <h3>
+                        <a href="project-details.html">
+                          Optimalisasi Jaringan Internet</a
+                        >
+                      </h3>
+                      <span class="number">05</span>
+                    </div>
+                    <span class="number-hover">05</span>
+                    <div class="project-content">
+                      <h3>
+                        <a href="project-details.html">
+                          Optimalisasi Jaringan Internet</a
+                        >
+                      </h3>
+                      <p>
+                        DBN memasang jaringan internet khusus untuk perusahaan
+                        manufaktur dan gudang, memastikan konektivitas yang
+                        stabil untuk operasional bisnis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Audience Section Start -->
+      <!-- <section
+        class="audience-section fix section-padding bg-cover"
+        style="background-image: url('assets/img/audience.jpg')"
+      >
+        <div class="container">
+          <div class="audience-wrapper">
+            <div class="row g-4">
+              <div class="col-lg-4">
+                <div class="audience-content">
+                  <div class="section-title">
+                    <div class="sub-title bg-color-3 wow fadeInUp">
+                      <span class="wow fadeInUp">Pencapaian Terbaik</span>
+                    </div>
+                    <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
+                      Hasil Nyata dari Solusi Terbaik Kami
+                    </h2>
+                  </div>
+                  <div class="client-items wow fadeInUp" data-wow-delay=".5s">
+                    <div class="client-logo">
+                      <img src="assets/img/hero/logo.png" alt="img" />
+                    </div>
+                    <div class="client-img">
+                      <img src="assets/img/client.png" alt="img" />
+                      <div class="star-icon">
+                        <div class="star">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>150+ reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="audience-right">
+                  <div class="audience-img wow fadeInUp" data-wow-delay=".3s">
+                    <img src="assets/img/sertif.jpg" alt="img" />
+                  </div>
+                  <div class="counter-box-area">
+                    <div class="counter-box wow fadeInUp" data-wow-delay=".5s">
+                      <h2><span class="count">180</span>+</h2>
+                      <div class="content">
+                        <h4>Total Proyek</h4>
                         <p>
-                          Jaringan cepat dengan analisis data akurat untuk
-                          konektivitas optimal.
+                          Mewujudkan koneksi tanpa batas di seluruh negeri.
                         </p>
                       </div>
                     </div>
-                    <div class="icon-items wow fadeInUp" data-wow-delay=".5s">
-                      <div class="icon">
-                        <i class="icon-02"></i>
-                      </div>
+                    <div class="counter-box wow fadeInUp" data-wow-delay=".7s">
+                      <h2><span class="count">30</span>M+</h2>
                       <div class="content">
-                        <h3>Performa Stabil & Terukur</h3>
+                        <h4>Investasi</h4>
                         <p>
-                          Jaringan cepat dengan analisis data untuk konektivitas
-                          optimal.
+                          Kepercayaan besar untuk pertumbuhan dan inovasi
                         </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Team Section Start -->
+      <!-- <section class="team-section fix section-padding">
+        <div class="container">
+          <div class="team-wrapper">
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="team-image">
+                  <img
+                    src="assets/img/person-3.png"
+                    alt="img"
+                    class="wow img-custom-anim-left w-75"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.3s"
+                  />
+                  <div class="shape-image">
+                    <img src="assets/img/team/shape-img.png" alt="img" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="team-content">
+                  <div class="section-title">
+                    <div class="sub-title wow fadeInUp">
+                      <span>Tim Kami</span>
+                    </div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                      Langkah Besar Dimulai di Sini
+                    </h2>
+                  </div>
+                  <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                    Didukung tim profesional yang berkomitmen, kami siap
+                    memberikan solusi tepat untuk setiap kebutuhan Anda.
+                  </p>
+                  <div class="list-items wow fadeInUp" data-wow-delay=".3s">
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
+                            fill="#6A47ED"
+                          />
+                        </svg>
+                        Pengalaman yang Mendalam
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
+                            fill="#6A47ED"
+                          />
+                        </svg>
+                        Teknologi Terkini
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
+                            fill="#6A47ED"
+                          />
+                        </svg>
+                        Pelayanan Pelanggan Unggul
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
+                            fill="#6A47ED"
+                          />
+                        </svg>
+                        Komitmen Terhadap Kualitas
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                    <a href="team.html">
+                      <span class="theme-btn"> EXPLORE MORE </span
+                      ><span class="arrow-btn"
+                        ><i class="fa-regular fa-arrow-up-right"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+
+    <div id="layananPaket">
+      <!-- Pricing Section Start -->
+      <section class="pricing-section fix section-padding section-bg">
+        <div class="left-shape float-bob-y">
+          <img src="assets/img/pricing-left.png" alt="img" />
+        </div>
+        <div class="right-shape float-bob-y">
+          <img src="assets/img/pricing-right.png" alt="img" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="pricing-content">
+                <div class="section-title">
+                  <div class="sub-title bg-color-2 wow fadeInUp">
+                    <span>Pilihan Konektivitas</span>
+                  </div>
+                  <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Pilihan layanan dan <br />
+                    paket untuk koneksi lancar.
+                  </h2>
+                </div>
+                <div class="pricing-tab-header mt-4 mt-md-0">
+                  <div class="arrow-shape">
+                    <img src="assets/img/arrow.png" alt="img" />
+                  </div>
+                  <ul class="nav" role="tablist">
+                    <li
+                      class="nav-item wow fadeInUp"
+                      data-wow-delay=".3s"
+                      role="presentation"
+                    >
+                      <a
+                        href="#layanan"
+                        data-bs-toggle="tab"
+                        class="nav-link active"
+                        aria-selected="true"
+                        role="tab"
+                      >
+                        Layanan
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item wow fadeInUp"
+                      data-wow-delay=".5s"
+                      role="presentation"
+                    >
+                      <a
+                        href="#paket"
+                        data-bs-toggle="tab"
+                        class="nav-link"
+                        aria-selected="false"
+                        role="tab"
+                        tabindex="-1"
+                      >
+                        Paket
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="save-text">Hemat 25%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="tab-content">
+                <div
+                  id="layanan"
+                  class="tab-pane fade show active"
+                  role="tabpanel"
+                >
+                  <div class="row g-4">
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                      data-wow-delay=".3s"
+                    >
+                      <div class="pricing-box-items">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>
+                              Layanan Internet <br />
+                              & Konektivitas
+                            </h4>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i> Pemasangan
+                              Jaringan</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Layanan
+                              ISP</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i> jaringan
+                              fiber optik stabil</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Mulai Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                      data-wow-delay=".5s"
+                    >
+                      <div class="pricing-box-items style-2">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Pemasangan & Konfigurasi WiFi</h4>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Instalasi
+                              router & access point</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i
+                              >troubleshooting jaringan</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>solusi dead
+                              zone</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Mulai Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-4 mt-1">
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                      data-wow-delay=".3s"
+                    >
+                      <div class="pricing-box-items">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>VPN & Remote <br> Access</h4>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Keamanan Koneksi Jarak Jauh</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Enkripsi data end-to-end</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Akses aman ke jaringan internal</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Mulai Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                      data-wow-delay=".5s"
+                    >
+                      <div class="pricing-box-items style-2">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Colocation & <br>Data Center</h4>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Keamanan fisik 24/7</span>
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Skalabilitas fleksibel</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Daya & pendinginan optimal</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Mulai Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-4 mt-1">
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                      data-wow-delay=".3s"
+                    >
+                      <div class="pricing-box-items">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Maintenance & Perbaikan Jaringan</h4>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Diagnosa
+                              koneksi lambat</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>perbaikan
+                              jaringan putus</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>upgrade
+                              perangkat WiFi</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Mulai Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                      data-wow-delay=".5s"
+                    >
+                      <div class="pricing-box-items style-2">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Interkoneksi & Infrastruktur Jaringan</h4>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Manajemen
+                              bandwidth</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>pemasangan
+                              jaringan lokal (LAN)</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>setting VPN &
+                              remote access</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Mulai Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="paket" class="tab-pane fade" role="tabpanel">
+                  <div class="row g-4">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="pricing-box-items">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Home Pro 150</h4>
+                            <h2>150k <sub>/ Bulan</sub></h2>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i> Up to 10
+                              Mbps</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>1-6
+                              Gadget</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Berlangganan Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="pricing-box-items style-2">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Pelajar 100</h4>
+                            <h2>100k <sub>/ Bulan</sub></h2>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i> Up to 3
+                              Mbps</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i> 1-3
+                              Gadget</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Berlangganan Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-4 mt-1">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="pricing-box-items">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Bisnis Basic 200</h4>
+                            <h2>200k <sub>/ Bulan</sub></h2>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Up to 15
+                              Mbps</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>1-9
+                              Gadget</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Berlangganan Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="pricing-box-items style-2">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Bisnis Pro 300</h4>
+                            <h2>300k <sub>/ Bulan</sub></h2>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Up to 18
+                              Mbps</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>1-12
+                              Gadget</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Berlangganan Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-4 mt-1">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="pricing-box-items">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Corporate 500</h4>
+                            <h2>500k <sub>/ Bulan</sub></h2>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Up to 15
+                              Mbps</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Lebih dari 12
+                              Gadget</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Berlangganan Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="pricing-box-items style-2">
+                        <div class="pricing-header">
+                          <div class="content">
+                            <h4>Lite 120</h4>
+                            <h2>125 <sub>/ Bulan</sub></h2>
+                          </div>
+                          <div class="icon">
+                            <img src="assets/img/cloud.png" alt="img" />
+                          </div>
+                        </div>
+                        <ul class="price-list">
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>Up to 5
+                              Mbps</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                          <li>
+                            <span class="price-1"
+                              ><i class="fa-regular fa-check"></i>1-4
+                              Gadget</span
+                            >
+                            <span class="icon"
+                              ><i class="fa-regular fa-circle-question"></i
+                            ></span>
+                          </li>
+                        </ul>
+                        <div class="price-button">
+                          <a href="pricing.html" class="theme-btn"
+                            >Berlangganan Sekarang
+                            <i class="fa-regular fa-arrow-right-long"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section Start -->
+      <section class="testimonial-section fix section-padding">
+        <div class="container">
+          <div class="testimonial-wrapper">
+            <div class="section-title-area">
+              <div class="section-title">
+                <div class="sub-title bg-color-2 wow fadeInUp">
+                  <span>Testimoni</span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                  Dengarkan Apa Kata<br />
+                  Mereka Tentang Kami
+                </h2>
+              </div>
+              <p class="wow fadeInUp" data-wow-delay=".5s">
+                Sudah menjadi fakta umum bahwa testimoni pelanggan<br />bukti
+                nyata kualitas layanan, memastikan pengalaman<br />terbaik bagi
+                setiap pengguna.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-xl-2 col-lg-4">
+                <div class="testimonial-left wow fadeInUp" data-wow-delay=".3s">
+                  <div class="client-img">
+                    <img src="assets/img/10.png" alt="img" />
+                    <div class="content">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p>15k+(reviews)</p>
+                    </div>
+                  </div>
+                  <div class="array-button wow fadeInUp" data-wow-delay=".5s">
+                    <button class="array-prev">
+                      <i class="fa-regular fa-arrow-left-long"></i>
+                    </button>
+                    <button class="array-next">
+                      <i class="fa-regular fa-arrow-right-long"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-10 col-lg-8">
+                <div class="swiper testimonial-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testimonial-box-items">
+                        <div class="icon">
+                          <img src="assets/img/kutip.png" alt="img" />
+                        </div>
+                        <div class="testimonial-img">
+                          <img src="assets/img/19.png" alt="img" />
+                          <div class="shape-img">
+                            <img
+                              src="assets/img/testimonial/shape.png"
+                              alt="img"
+                              style="
+                                filter: hue-rotate(135deg) saturate(80%)
+                                  brightness(110%);
+                              "
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="client-info">
+                            <div class="star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5>Esther Howard</h5>
+                            <span>Nursing Assistant</span>
+                          </div>
+                          <p>
+                            Consectetur adipiscing elit. Integer nunc viverra
+                            laoreet est the is porta pretium metus aliquam eget
+                            maecenas porta is nunc viverra Aenean
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-box-items">
+                        <div class="icon">
+                          <img src="assets/img/kutip.png" alt="img" />
+                        </div>
+                        <div class="testimonial-img">
+                          <img src="assets/img/18.png" alt="img" />
+                          <div class="shape-img">
+                            <img
+                              src="assets/img/testimonial/shape.png"
+                              alt="img"
+                              style="
+                                filter: hue-rotate(135deg) saturate(80%)
+                                  brightness(110%);
+                              "
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="client-info">
+                            <div class="star">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h5>Courtney Henry</h5>
+                            <span>Nursing Assistant</span>
+                          </div>
+                          <p>
+                            Consectetur adipiscing elit. Integer nunc viverra
+                            laoreet est the is porta pretium metus aliquam eget
+                            maecenas porta is nunc viverra Aenean
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -791,7 +1943,89 @@
       </section>
     </div>
 
-    <!-- Faq Section Start -->
+    <div id="kontakKami">
+      <!-- Contact Section Start -->
+      <section class="contact-section fix section-padding">
+        <div class="container">
+          <div class="section-title-area">
+            <div class="section-title">
+              <div class="sub-title bg-color-3 wow fadeInUp">
+                <span class="wow fadeInUp">Kontak Kami</span>
+              </div>
+              <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
+                Hubungi Kami untuk Solusi!
+              </h2>
+            </div>
+            <p class="white-text wow fadeInUp" data-wow-delay=".5s">
+              Jangan ragu untuk menghubungi kami, tim kami <br />
+              siap memberikan solusi terbaik untuk kebutuhan Anda <br />
+              dengan pelayanan profesional.
+            </p>
+          </div>
+          <div class="contact-wrapper">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="contact-form-area">
+                  <h3>Hubungi Kami</h3>
+                  <form action="#" id="contact-form" method="POST">
+                    <div class="row g-4">
+                      <div class="col-lg-6">
+                        <div class="form-clt">
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Nama"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-clt">
+                          <input
+                            type="text"
+                            name="alamat"
+                            id="alamat"
+                            placeholder="Masukkan Alamat"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-clt">
+                          <textarea
+                            cols="50"
+                            rows="1"
+                            name="message"
+                            id="message"
+                            placeholder="Ajukan Pertanyaan"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <button type="submit" class="theme-btn">
+                          Kirim Sekarang
+                          <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="contact-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.008834245661!2d112.18408717416942!3d-8.100580191928254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ec7ce9705623%3A0xb975eb175c3eae76!2sJl.%20Suryat%20No.83%2C%20Gedog%2C%20Kec.%20Sananwetan%2C%20Kota%20Blitar%2C%20Jawa%20Timur%2066171!5e0!3m2!1sid!2sid!4v1742634956868!5m2!1sid!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <section class="faq-section section-padding pb-0">
       <div class="faq-overlay">
         <img src="assets/img/faq-overlay.png" alt="img" />
@@ -891,7 +2125,7 @@
                       </div>
                     </div>
                     <div
-                      class="accordion-item mb-3 wow fadeInUp"
+                      class="accordion-item mb-5 wow fadeInUp"
                       data-wow-delay=".7s"
                     >
                       <h5 class="accordion-header">
@@ -918,34 +2152,6 @@
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="accordion-item mb-0 wow fadeInUp"
-                      data-wow-delay=".7s"
-                    >
-                      <h5 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faq4"
-                          aria-expanded="false"
-                          aria-controls="faq4"
-                        >
-                          Apa itu layanan VPN-Remote?
-                        </button>
-                      </h5>
-                      <div
-                        id="faq4"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordion"
-                      >
-                        <div class="accordion-body">
-                          VPN-Remote memungkinkan Anda mengakses jaringan kantor
-                          atau bisnis dengan aman dari mana saja, menjaga
-                          privasi dan keamanan data.
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -955,117 +2161,32 @@
       </div>
     </section>
 
-    <section class="contact-info-section fix section-padding">
-        <div class="container">
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="sub-title bg-color-2 wow fadeInUp">
-                        <span>Kontak Kami</span>
-                    </div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Hubungi Kami untuk Informasi <br> Lebih Lanjut
-                    </h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="contact-info-items text-center active">
-                        <div class="icon">
-                           <i class="icon-09"></i>
-                        </div>
-                        <div class="content">
-                            <h3>Alamat</h3>
-                            <p>
-                                Jl. Suryat 83, Blitar, Jawa Timur<br> 66171
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="contact-info-items text-center">
-                        <div class="icon">
-                            <i class="icon-10"></i>
-                        </div>
-                        <div class="content">
-                            <h3><a href="mailto:reza@dbn.net.id">reza@dbn.net.id</a></h3>
-                            <p>
-                                Kirim email kapan saja untuk <br>pertanyaan apa pun.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="contact-info-items text-center">
-                        <div class="icon">
-                            <i class="icon-11"></i>
-                        </div>
-                        <div class="content">
-                            <h3>Hot:<a href="tel:+62 82231316666​">+62 822-3131-6666</a></h3>
-                            <p>
-                                Hubungi kami untuk dukungan apa pun,<br> kami siap membantu.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Cta Section Start -->
+    <section class="cta-section section-bg section-padding pb-0">
+      <div class="rokect-shape float-bob-y">
+        <img src="assets/img/icon-9.png" alt="img" class="w-50" />
+      </div>
+      <div class="container">
+        <div
+          class="cta-wrapper bg-cover"
+          style="background-image: url('assets/img/cta-bg.jpg')"
+        >
+          <div
+            class="cta-img wow img-custom-anim-left"
+            data-wow-duration="1.5s"
+            data-wow-delay="0.3s"
+          >
+            <img src="assets/img/99.png" alt="img" class="w-50" />
+          </div>
+          <h2 class="wow fadeInUp" data-wow-delay=".3s">
+            Selalu Terkoneksi, Selalu Terdepan
+          </h2>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section Start -->
-    <section class="contact-section-33 fix section-padding pt-0">
-        <div class="container">
-            <div class="contact-wrapper-2">
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="map-items">
-                            <div class="googpemap">
-                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0096479079853!2d112.1865444297954!3d-8.100497269838694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ec7ce9705623%3A0xb975eb175c3eae76!2sJl.%20Suryat%20No.83%2C%20Gedog%2C%20Kec.%20Sananwetan%2C%20Kota%20Blitar%2C%20Jawa%20Timur%2066171!5e0!3m2!1sid!2sid!4v1742621267464!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="contact-content">
-                            <h2>Ready to Get Started?</h2>
-                            <p>
-                                Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor ultrices,
-                            </p>
-                            <form action="contact.php" id="contact-form" method="POST" class="contact-form-items">
-                                <div class="row g-4">
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="form-clt">
-                                            <span>Nama*</span>
-                                            <input type="text" name="name" id="name" placeholder="Nama">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <span>Email*</span>
-                                            <input type="text" name="email" id="email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
-                                        <div class="form-clt">
-                                            <span>Tulis Pertanyaan*</span>
-                                            <input name="message" id="message" placeholder="Tulis Pertanyaan"></inp>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
-                                        <button type="submit" class="theme-btn">
-                                            Kirim <i class="fa-solid fa-arrow-right-long"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <!-- Footer Section Start -->
-    <section class="footer-section footer-bg fix mt-6">
+    <section class="footer-section footer-bg fix">
       <div class="container">
         <div class="footer-widgets-wrapper">
           <div class="row">
@@ -1076,14 +2197,22 @@
               <div class="single-footer-widget">
                 <div class="widget-head">
                   <a href="index.html">
-                    <img src="assets/img/logo/white-logo.svg" alt="img" />
+                    <img
+                      src="assets/img/dbn.svg"
+                      alt="img"
+                      style="
+                        filter: drop-shadow(
+                          5px 5px 10px rgba(255, 255, 255, 0.5)
+                        );
+                      "
+                    />
                   </a>
                 </div>
                 <div class="footer-content">
-                  <p>
-                    PT Data Buana Nusantara berkomitmen menghadirkan layanan
-                    jaringan dan IT berkualitas, memastikan konektivitas yang
-                    stabil, aman, dan efisien untuk berbagai kebutuhan.
+                  <p style="font-weight: 500">
+                    DBN menghadirkan solusi internet, pemasangan CCTV, dan
+                    layanan IT terpercaya untuk konektivitas yang lebih aman dan
+                    lancar
                   </p>
                   <div class="social-icon d-flex align-items-center">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1100,37 +2229,31 @@
             >
               <div class="single-footer-widget">
                 <div class="widget-head">
-                  <h3>Quick Links</h3>
+                  <h3>Keunggulan</h3>
                 </div>
                 <ul class="list-area">
                   <li>
-                    <a href="about.html">
+                    <a href="#">
                       <i class="fa-solid fa-chevrons-right"></i>
-                      Digtek About
+                      99% Uptime
                     </a>
                   </li>
                   <li>
-                    <a href="service.html">
+                    <a href="#">
                       <i class="fa-solid fa-chevrons-right"></i>
-                      Our Services
+                      Support 24/7
                     </a>
                   </li>
                   <li>
-                    <a href="news.html">
+                    <a href="#">
                       <i class="fa-solid fa-chevrons-right"></i>
-                      Our Blogs
+                      Jangkauan Luas
                     </a>
                   </li>
                   <li>
-                    <a href="faq.html">
+                    <a href="#">
                       <i class="fa-solid fa-chevrons-right"></i>
-                      FAQ’S
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html">
-                      <i class="fa-solid fa-chevrons-right"></i>
-                     Kontak Kami
+                      Koneksi Stabil
                     </a>
                   </li>
                 </ul>
@@ -1142,47 +2265,29 @@
             >
               <div class="single-footer-widget">
                 <div class="widget-head">
-                  <h3>Recent Posts</h3>
+                  <h3>Alamat</h3>
                 </div>
-                <div class="recent-post-area">
-                  <div class="recent-post-items">
-                    <div class="thumb">
-                      <img src="assets/img/news/pp1.jpg" alt="post-img" />
-                    </div>
-                    <div class="content">
-                      <ul class="post-date">
-                        <li>
-                          <i class="fa-solid fa-calendar-days me-2"></i>
-                          20 Feb, 2024
-                        </li>
-                      </ul>
-                      <h6>
-                        <a href="news-details.html">
-                          Top 5 Most Famous <br />
-                          Technology Trend In 2024
-                        </a>
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="recent-post-items mb-0">
-                    <div class="thumb">
-                      <img src="assets/img/news/pp2.jpg" alt="post-img" />
-                    </div>
-                    <div class="content">
-                      <ul class="post-date">
-                        <li>
-                          <i class="fa-solid fa-calendar-days me-2"></i>
-                          15 Dec, 2024
-                        </li>
-                      </ul>
-                      <h6>
-                        <a href="news-details.html">
-                          The Surfing Man Will Blow <br />
-                          Your Mind
-                        </a>
-                      </h6>
-                    </div>
-                  </div>
+                <div class="footer-content">
+                  <ul class="contact-info">
+                    <li>
+                      <i class="fa-regular fa-location-dot"></i>
+                      <a href="#"
+                        >Jl. Suryat 83, Blitar,<br />
+                        Jawa Timur, 66171</a
+                      >
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-clock"></i>
+                      <a href="#"
+                        >Senin - Jumat <br />
+                        09:00 - 17:00</a
+                      >
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-link"></i>
+                      <a href="#">www.dbn.net.id</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1192,7 +2297,7 @@
             >
               <div class="single-footer-widget">
                 <div class="widget-head">
-                  <h3>Contact Us</h3>
+                  <h3>Kontak Kami</h3>
                 </div>
                 <div class="footer-content">
                   <ul class="contact-info">
@@ -1202,7 +2307,7 @@
                     </li>
                     <li>
                       <i class="fa-solid fa-phone-volume"></i>
-                      <a href="tel:2086660112">+62 822-3131-6666</a>
+                      <a href="tel:082231316699">0822-3131-6699</a>
                     </li>
                   </ul>
                   <div class="footer-input">
@@ -1224,7 +2329,10 @@
                       checked=""
                     />
                     <label class="form-check-label" for="flexCheckChecked">
-                      I agree to the <a href="contact.html">Privacy Policy.</a>
+                      I agree to the
+                      <a href="contact.html" style="color: rgba(5, 27, 0, 0.8)"
+                        >Privacy Policy.</a
+                      >
                     </label>
                   </div>
                 </div>
