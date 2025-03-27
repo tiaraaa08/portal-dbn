@@ -1257,7 +1257,7 @@ span {
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--border);
-  padding: 20px 20px;
+  padding: 15px 15px;
   line-height: 1;
   color: var(--text);
 }
@@ -1308,7 +1308,7 @@ span {
 }
 .contact-wrapper .contact-map iframe {
   width: 100%;
-  height: 630px;
+  height: 453px;
   border-radius: 20px;
 }
 .contact-wrapper .contact-info-wrapper {
@@ -2301,7 +2301,7 @@ span {
 }
 .footer-widgets-wrapper .single-footer-widget .widget-head h3 {
   font-weight: bold;
-  color: var(--white);
+  color: rgba(5, 27, 0, 0.8);
   font-size: 24px;
   display: inline-block;
   position: relative;
@@ -2336,7 +2336,7 @@ span {
   }
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(5, 27, 0, 0.8);
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .social-icon {
   margin-top: 40px;
@@ -2354,9 +2354,9 @@ span {
   height: 36px;
   line-height: 36px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(5, 27, 0, 0.8);
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(5, 27, 0, 0.8);
 }
 .footer-widgets-wrapper
   .single-footer-widget
@@ -2364,7 +2364,7 @@ span {
   .social-icon
   a:hover {
   background-color: var(--theme);
-  color: var(--white);
+  color: rgba(5, 27, 0, 0.8);
   border: 1px solid var(--theme);
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .contact-info {
@@ -2388,7 +2388,7 @@ span {
   li
   i {
   font-size: 16px;
-  color: var(--white);
+  color: rgba(5, 27, 0, 0.8);
   margin-right: 10px;
   font-size: 20px;
 }
@@ -2398,7 +2398,7 @@ span {
   .contact-info
   li
   a {
-  color: var(--white);
+  color: rgba(5, 27, 0, 0.8);
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .footer-input {
   position: relative;
@@ -2439,7 +2439,7 @@ span {
   border-radius: 8px;
   text-align: center;
   background-color: var(--theme);
-  color: var(--white);
+  color: rgba(5, 27, 0, 0.8)
   bottom: 5px;
 }
 .footer-widgets-wrapper
@@ -2451,7 +2451,7 @@ span {
   font-size: 18px;
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .form-check {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(5, 27, 0, 0.8);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -2469,7 +2469,7 @@ span {
   margin-bottom: 20px;
 }
 .footer-widgets-wrapper .single-footer-widget .list-area li a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(5, 27, 0, 0.8);
 }
 .footer-widgets-wrapper .single-footer-widget .list-area li a i {
   margin-right: 5px;
@@ -2478,7 +2478,7 @@ span {
   margin-left: 5px;
 }
 .footer-widgets-wrapper .single-footer-widget .list-area li:hover a {
-  color: var(--white);
+  color: rgba(5, 27, 0, 0.8);
 }
 .footer-widgets-wrapper
   .single-footer-widget
@@ -3072,7 +3072,7 @@ span {
   display: none;
 }
 .sticky.header-1 .search-trigger {
-  display: none;
+  display: inherit;
 }
 .sticky.header-1 .header-right .sidebar__toggle {
   color: var(--header);
@@ -5534,7 +5534,6 @@ input.main-search-input::placeholder {
   visibility: visible;
   transform: translate(0);
 }
-
 .pricing-box-items {
   border-radius: 20px;
   border: 1px solid #d4dcff;
@@ -5546,25 +5545,34 @@ input.main-search-input::placeholder {
   background: #228b22;
   padding: 24px;
   position: relative;
+  overflow: hidden;
 }
 .pricing-box-items .pricing-header .icon {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  opacity: 0.6;
 }
 .pricing-box-items .pricing-header h4 {
   color: var(--white);
+  position: relative;
+  z-index: 2;
 }
 .pricing-box-items .pricing-header h2 {
   color: var(--white);
   font-size: 40px;
   margin-top: 20px;
+  position: relative;
+  z-index: 2;
 }
 .pricing-box-items .pricing-header h2 sub {
   color: var(--white);
   font-size: 16px;
   font-weight: 400;
   margin-left: -5px;
+  position: relative;
+  z-index: 2;
 }
 .pricing-box-items .price-list {
   margin-top: 30px;
@@ -6561,7 +6569,7 @@ input.main-search-input::placeholder {
 }
 
 .footer-bg {
-  background-color: #ff9f45;
+  background-color:rgb(255, 238, 222);
   /* background-color: #18185E; */
 }
 
