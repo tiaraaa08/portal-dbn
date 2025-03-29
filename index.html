@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--<< Header Area >>-->
   <head>
-    <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Gramentheme" />
-    <meta
-      name="description"
-      content="DBN: Layanan Profesional Pemasangan WiFi Berkecepatan Tinggi"
-    />
-    <!-- ======== Page title ============ -->
+    <meta name="description" content="DBN: Layanan Profesional Pemasangan WiFi Berkecepatan Tinggi"/>
     <title>DBN: Layanan Profesional Pemasangan WiFi Berkecepatan Tinggi</title>
-    <!--<< Favcion >>-->
     <link rel="shortcut icon" href="assets/img/favicon.svg" />
-    <!--<< Bootstrap min.css >>-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!--<< All Min Css >>-->
     <link rel="stylesheet" href="assets/css/all.min.css" />
-    <!--<< Animate.css >>-->
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <!--<< Icomoon.css >>-->
     <link rel="stylesheet" href="assets/css/icomoon.css" />
-    <!--<< Magnific Popup.css >>-->
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <!--<< MeanMenu.css >>-->
     <link rel="stylesheet" href="assets/css/meanmenu.css" />
-    <!--<< Swiper Bundle.css >>-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <!--<< Nice Select.css >>-->
     <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <!--<< Color.css >>-->
     <link rel="stylesheet" href="assets/css/color.css" />
-    <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!-- Preloader Start -->
     <div id="preloader" class="preloader">
       <div class="animation-preloader">
         <div class="spinner"></div>
@@ -66,34 +48,22 @@
       </div>
     </div>
 
-    <!-- Back To Top Start -->
     <button id="back-top" class="back-to-top">
       <i class="fa-regular fa-arrow-up"></i>
     </button>
 
-    <!--<< Mouse Cursor Start >>-->
     <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
 
-    <!-- Offcanvas Area Start -->
     <div class="fix-area">
       <div class="offcanvas__info">
         <div class="offcanvas__wrapper">
           <div class="offcanvas__content">
-            <div
-              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
-            >
+            <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
               <div class="offcanvas__logo">
                 <a href="index.html">
-                  <img
-                    src="assets/img/dbn.svg"
-                    alt="logo-img"
-                    style="
-                      filter: drop-shadow(
-                        5px 5px 10px rgba(255, 255, 255, 0.5)
-                      );
-                    "
-                  />
+                  <img src="assets/img/dbn-h.png" alt="logo-img" style="filter: drop-shadow(  5px 5px 10px rgba(255, 255, 255, 0.5)); "
+               />
                 </a>
               </div>
               <div class="offcanvas__close">
@@ -102,10 +72,10 @@
                 </button>
               </div>
             </div>
-            <p class="text d-none d-xl-block">
+            <!-- <p class="text d-none d-xl-block">
               DBN menghadirkan solusi internet, pemasangan CCTV, dan layanan IT
               terpercaya untuk konektivitas yang lebih aman dan lancar
-            </p>
+            </p> -->
             <div class="mobile-menu fix mb-3"></div>
             <div class="offcanvas__contact">
               <h4>Info Kontak</h4>
@@ -170,7 +140,6 @@
     </div>
     <div class="offcanvas__overlay"></div>
 
-    <!-- Header Section Start -->
     <header id="header-sticky" class="header-1">
       <div class="container-fluid">
         <div class="mega-menu-wrapper">
@@ -178,7 +147,7 @@
             <div class="logo">
               <a href="index.html" class="header-logo">
                 <img
-                  src="assets/img/dbn.svg"
+                  src="assets/img/dbn-hi.png"
                   alt="logo-img"
                   style="
                     filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.5));
@@ -186,7 +155,7 @@
                 />
               </a>
               <a href="index.html" class="header-logo-2">
-                <img src="assets/img/dbn.svg" alt="logo-img" />
+                <img src="assets/img/dbn-h.png" alt="logo-img" />
               </a>
             </div>
             <div class="mean__menu-wrapper">
@@ -205,9 +174,6 @@
                     <li class="has-dropdown">
                       <a href="#layananPaket"> Layanan & Paket</a>
                     </li>
-                    <!-- <li>
-                      <a href="#faq"> Faq's </a>
-                    </li> -->
                     <li>
                       <a href="#kontakKami"> Kontak Kami</a>
                     </li>
@@ -232,35 +198,32 @@
       </div>
     </header>
 
-    <!-- Search Area Start -->
     <div class="search-wrap">
       <div class="search-inner">
         <i class="fas fa-times search-close" id="search-close"></i>
         <div class="search-cell">
           <form method="get">
-            <div class="search-field-holder">
+            <div class="search-field-holder d-flex align-items-center gap-2">
               <input
                 type="search"
                 class="main-search-input"
+                id="search-input"
                 placeholder="Search..."
               />
+              <button type="button" class="search-btn theme-btn" id="search-button">
+                <i class="fas fa-search"></i>
+              </button>
             </div>
           </form>
+          <h5 class="text-danger d-flex align-items-center justify-content-center text-center d-none mt-2">
+            oops! apa yang anda cari tidak ditemukan
+          </h5>          
         </div>
       </div>
     </div>
 
     <div id="beranda">
-      <!-- Hero Section Start -->
-      <section
-        class="hero-section fix hero-1 bg-cover"
-        style="
-          background: linear-gradient(#b0ffb0a2, #1d761d),
-            url('assets/img/hero/hero-bg.jpg');
-          background-size: cover;
-          background-position: center;
-        "
-      >
+      <section class="hero-section fix hero-1 bg-cover" style="background-image: url('assets/img/hero/hero-bg.jpg');">
         <div class="arrow-shape">
           <img src="assets/img/hero/arrow-shape.png" alt="img" />
         </div>
@@ -340,13 +303,11 @@
         </div>
       </section>
 
-      <!-- Marque Section Start -->
       <div class="marquee-section-1">
         <div class="mycustom-marque style-2">
           <div
             class="scrolling-wrap"
-            style="background-color: rgb(254, 255, 251)"
-          >
+            style="background-color: #f4fff6">
             <div class="comm">
               <div class="cmn-textslide">
                 <img src="assets/img/star.png" alt="img" />Pilihan Terbaik
@@ -417,7 +378,7 @@
             </div>
           </div>
         </div>
-        <div class="mycustom-marque style-3" style="background-color: #e9ad58">
+        <div class="mycustom-marque style-3" style="background-color: #f1f6ff">
           <div class="scrolling-wrap">
             <div class="comm">
               <div class="cmn-textslide">
@@ -493,39 +454,11 @@
     </div>
 
     <div id="tentangKami">
-      <!-- About Section Start -->
       <section class="about-section fix section-padding">
         <div class="left-shape float-bob-y">
           <img src="assets/img/about/left-shape.png" alt="img" />
         </div>
         <div class="container">
-          <!-- <div class="brand-wrapper">
-          <h4 class="brand-title">1k + Brands Trust Us</h4>
-          <div class="swiper brand-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/01.png" alt="img" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/02.png" alt="img" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/03.png" alt="img" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand-img center">
-                  <img src="assets/img/brand/04.png" alt="img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
           <div class="about-wrapper">
             <div class="row g-4">
               <div class="col-lg-6">
@@ -555,7 +488,6 @@
                 <div class="about-content">
                   <div class="section-title">
                     <div class="sub-title bg-color-2 wow fadeInUp">
-                      <!-- <span>ABOUT COMPANY</span> -->
                     </div>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s">
                       Tentang PT Data Buana Nusantara
@@ -607,43 +539,7 @@
                         </h6>
                       </div>
                     </div>
-                    <!-- <div
-                      class="single-circle-bar wow fadeInUp"
-                      data-wow-delay=".3s"
-                    >
-                      <div
-                        class="circle-bar"
-                        data-percent="97"
-                        data-duration="2000"
-                      ></div>
-                      <div class="content">
-                        <h6>Kepuasan <br />Pelanggan</h6>
-                      </div>
-                    </div>
-                    <div
-                      class="single-circle-bar wow fadeInUp"
-                      data-wow-delay=".5s"
-                    >
-                      <div
-                        class="circle-bar"
-                        data-percent="95"
-                        data-duration="2000"
-                      ></div>
-                      <div class="content">
-                        <h6>
-                          Kestabilan<br />
-                          Performa
-                        </h6>
-                      </div>
-                    </div> -->
                   </div>
-                  <!-- <div class="main-button wow fadeInUp" data-wow-delay=".3s">
-                    <a href="about.html">
-                      <span class="theme-btn"> Lebih Lanjut </span
-                      ><span class="arrow-btn"
-                        ><i class="fa-regular fa-arrow-up-right"></i></span
-                    ></a>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -651,7 +547,6 @@
         </div>
       </section>
 
-      <!-- Service Section Start -->
       <section class="service-section fix section-padding">
         <div class="left-shape float-bob-y">
           <img src="assets/img/service/left-shape.png" alt="img" />
@@ -824,365 +719,10 @@
           </div>
         </div>
       </section>
-
-      <!-- Case Study Section Start -->
-      <!-- <section class="case-study-section fix section-padding">
-        <div class="overlay-shape">
-          <img src="assets/img/case-studies/overlay-shape.png" alt="img" />
-        </div>
-        <div class="left-shape float-bob-x">
-          <img src="assets/img/case-studies/left-shape.png" alt="img" />
-        </div>
-        <div class="right-shape float-bob-x">
-          <img src="assets/img/case-studies/right-shaape.png" alt="img" />
-        </div>
-        <div class="container">
-          <div class="section-title-area">
-            <div class="section-title">
-              <div class="sub-title wow fadeInUp">
-                <span>Solusi dalam Aksi</span>
-              </div>
-              <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                Dari masalah ke solusi - lihat <br />
-                bagaimana kami bekerja.
-              </h2>
-            </div>
-            <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-              <a href="about.html">
-                <span class="theme-btn"> EXPLORE MORE </span
-                ><span class="arrow-btn"
-                  ><i class="fa-regular fa-arrow-up-right"></i></span
-              ></a>
-            </div>
-          </div>
-          <div class="case-study-wrapper">
-            <div class="row">
-              <div class="col-xxl-6 wow fadeInUp">
-                <div class="case-study-box-items">
-                  <div class="thumb">
-                    <img src="assets/img/case-1.jpg" alt="img" />
-                    <div class="post-box-items">
-                      <ul>
-                        <li>
-                          <a href="project-details.html"
-                            >Connected
-                            <i class="fa-regular fa-arrow-up-right"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="project-details.html"
-                            >Reliable
-                            <i class="fa-regular fa-arrow-up-right"></i
-                          ></a>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <a href="project-details.html"
-                            >Trusted <i class="fa-regular fa-arrow-up-right"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <h3 class="project-title">
-                      <a href="project-details.html">
-                        <img src="assets/img/case-studies/icon.png" alt="img" />
-                        Pemasangan WiFi Publik di Pusat Kota Blitar
-                      </a>
-                    </h3>
-                    <span class="number">01</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-6">
-                <div class="main-box">
-                  <div class="box wow fadeInUp">
-                    <div class="title-items">
-                      <h3>
-                        <a href="project-details.html"
-                          >Penyediaan Colocation Server</a
-                        >
-                      </h3>
-                      <span class="number">02</span>
-                    </div>
-                    <span class="number-hover">02</span>
-                    <div class="project-content">
-                      <h3>
-                        <a href="project-details.html"
-                          >Penyediaan Colocation Server</a
-                        >
-                      </h3>
-                      <p>
-                        Membantu UMKM dalam hosting website dan penyimpanan data
-                        dengan solusi colocation server yang aman dan efisien.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="box bg-1 wow fadeInUp wow" data-wow-delay=".2s">
-                    <div class="title-items">
-                      <h3>
-                        <a href="project-details.html"
-                          >Pemasangan CCTV dan Keamanan Digital</a
-                        >
-                      </h3>
-                      <span class="number">03</span>
-                    </div>
-                    <span class="number-hover">03</span>
-                    <div class="project-content">
-                      <h3>
-                        <a href="project-details.html"
-                          >Pemasangan CCTV dan Keamanan Digital</a
-                        >
-                      </h3>
-                      <p>
-                        DBN mengintegrasikan sistem CCTV & jaringan IT untuk
-                        meningkatkan keamanan dan efisiensi operasional sekolah.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="box bg-2 active wow fadeInUp wow"
-                    data-wow-delay=".4s"
-                  >
-                    <div class="title-items">
-                      <h3>
-                        <a href="project-details.html">
-                          Interkoneksi Jaringan</a
-                        >
-                      </h3>
-                      <span class="number">04</span>
-                    </div>
-                    <span class="number-hover">04</span>
-                    <div class="project-content">
-                      <h3>
-                        <a href="project-details.html">
-                          Interkoneksi Jaringan</a
-                        >
-                      </h3>
-                      <p>
-                        DBN membangun jaringan VPN-Remote agar data antar cabang
-                        bisa diakses dengan cepat dan aman tanpa risiko
-                        keamanan.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="box bg-3 wow fadeInUp wow" data-wow-delay=".6s">
-                    <div class="title-items">
-                      <h3>
-                        <a href="project-details.html">
-                          Optimalisasi Jaringan Internet</a
-                        >
-                      </h3>
-                      <span class="number">05</span>
-                    </div>
-                    <span class="number-hover">05</span>
-                    <div class="project-content">
-                      <h3>
-                        <a href="project-details.html">
-                          Optimalisasi Jaringan Internet</a
-                        >
-                      </h3>
-                      <p>
-                        DBN memasang jaringan internet khusus untuk perusahaan
-                        manufaktur dan gudang, memastikan konektivitas yang
-                        stabil untuk operasional bisnis.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Audience Section Start -->
-      <!-- <section
-        class="audience-section fix section-padding bg-cover"
-        style="background-image: url('assets/img/audience.jpg')"
-      >
-        <div class="container">
-          <div class="audience-wrapper">
-            <div class="row g-4">
-              <div class="col-lg-4">
-                <div class="audience-content">
-                  <div class="section-title">
-                    <div class="sub-title bg-color-3 wow fadeInUp">
-                      <span class="wow fadeInUp">Pencapaian Terbaik</span>
-                    </div>
-                    <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                      Hasil Nyata dari Solusi Terbaik Kami
-                    </h2>
-                  </div>
-                  <div class="client-items wow fadeInUp" data-wow-delay=".5s">
-                    <div class="client-logo">
-                      <img src="assets/img/hero/logo.png" alt="img" />
-                    </div>
-                    <div class="client-img">
-                      <img src="assets/img/client.png" alt="img" />
-                      <div class="star-icon">
-                        <div class="star">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                        </div>
-                        <span>150+ reviews</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="audience-right">
-                  <div class="audience-img wow fadeInUp" data-wow-delay=".3s">
-                    <img src="assets/img/sertif.jpg" alt="img" />
-                  </div>
-                  <div class="counter-box-area">
-                    <div class="counter-box wow fadeInUp" data-wow-delay=".5s">
-                      <h2><span class="count">180</span>+</h2>
-                      <div class="content">
-                        <h4>Total Proyek</h4>
-                        <p>
-                          Mewujudkan koneksi tanpa batas di seluruh negeri.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="counter-box wow fadeInUp" data-wow-delay=".7s">
-                      <h2><span class="count">30</span>M+</h2>
-                      <div class="content">
-                        <h4>Investasi</h4>
-                        <p>
-                          Kepercayaan besar untuk pertumbuhan dan inovasi
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Team Section Start -->
-      <!-- <section class="team-section fix section-padding">
-        <div class="container">
-          <div class="team-wrapper">
-            <div class="row g-4">
-              <div class="col-lg-6">
-                <div class="team-image">
-                  <img
-                    src="assets/img/person-3.png"
-                    alt="img"
-                    class="wow img-custom-anim-left w-75"
-                    data-wow-duration="1.5s"
-                    data-wow-delay="0.3s"
-                  />
-                  <div class="shape-image">
-                    <img src="assets/img/team/shape-img.png" alt="img" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="team-content">
-                  <div class="section-title">
-                    <div class="sub-title wow fadeInUp">
-                      <span>Tim Kami</span>
-                    </div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                      Langkah Besar Dimulai di Sini
-                    </h2>
-                  </div>
-                  <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                    Didukung tim profesional yang berkomitmen, kami siap
-                    memberikan solusi tepat untuk setiap kebutuhan Anda.
-                  </p>
-                  <div class="list-items wow fadeInUp" data-wow-delay=".3s">
-                    <ul>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
-                            fill="#6A47ED"
-                          />
-                        </svg>
-                        Pengalaman yang Mendalam
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
-                            fill="#6A47ED"
-                          />
-                        </svg>
-                        Teknologi Terkini
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
-                            fill="#6A47ED"
-                          />
-                        </svg>
-                        Pelayanan Pelanggan Unggul
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.38397 14.1797C7.34153 14.1797 7.29954 14.171 7.26066 14.1539C7.22178 14.1369 7.18683 14.1121 7.15803 14.0809L1.06612 7.49119C1.02551 7.44726 0.99859 7.39244 0.988651 7.33344C0.978712 7.27445 0.986187 7.21384 1.01016 7.15902C1.03414 7.10421 1.07357 7.05758 1.12364 7.02483C1.17371 6.99208 1.23223 6.97464 1.29206 6.97464H4.22437C4.26839 6.97464 4.31191 6.98409 4.35197 7.00234C4.39204 7.0206 4.42772 7.04723 4.45661 7.08045L6.49255 9.42273C6.71258 8.95239 7.13852 8.16925 7.88597 7.21497C8.99095 5.8042 11.0463 3.7294 14.5627 1.85642C14.6307 1.82023 14.7097 1.81083 14.7843 1.83009C14.8588 1.84936 14.9235 1.89587 14.9654 1.96046C15.0073 2.02504 15.0235 2.103 15.0108 2.17894C14.998 2.25488 14.9573 2.32328 14.8966 2.37064C14.8831 2.38113 13.5273 3.44882 11.967 5.40448C10.5309 7.20417 8.62191 10.1469 7.68255 13.946C7.66605 14.0128 7.62767 14.0721 7.57354 14.1144C7.5194 14.1568 7.45263 14.1799 7.38388 14.1799L7.38397 14.1797Z"
-                            fill="#6A47ED"
-                          />
-                        </svg>
-                        Komitmen Terhadap Kualitas
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                    <a href="team.html">
-                      <span class="theme-btn"> EXPLORE MORE </span
-                      ><span class="arrow-btn"
-                        ><i class="fa-regular fa-arrow-up-right"></i></span
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-    </div>
+     </div>
 
     <div id="layananPaket">
-      <!-- Pricing Section Start -->
-      <section class="pricing-section fix section-padding section-bg">
+      <section class="pricing-section fix section-padding section-bg" style="background-color: rgb(244, 248, 255);">
         <div class="left-shape float-bob-y">
           <img src="assets/img/pricing-left.png" alt="img" />
         </div>
@@ -1204,7 +744,7 @@
                 </div>
                 <div class="pricing-tab-header mt-4 mt-md-0">
                   <div class="arrow-shape">
-                    <img src="assets/img/arrow.png" alt="img" />
+                    <img src="assets/img/arrow.png" alt="img"/>
                   </div>
                   <ul class="nav" role="tablist">
                     <li
@@ -1297,7 +837,7 @@
                           </li>
                         </ul>
                         <div class="price-button">
-                          <a href="pricing.html" class="theme-btn"
+                          <a href="tel:082231316699" class="theme-btn"
                             >Mulai Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
@@ -1347,7 +887,7 @@
                           </li>
                         </ul>
                         <div class="price-button">
-                          <a href="pricing.html" class="theme-btn"
+                          <a href="tel:082231316699" class="theme-btn"
                             >Mulai Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
@@ -1396,7 +936,7 @@
                           </li>
                         </ul>
                         <div class="price-button">
-                          <a href="pricing.html" class="theme-btn"
+                          <a href="tel:082231316699" class="theme-btn"
                             >Mulai Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
@@ -1442,7 +982,7 @@
                           </li>
                         </ul>
                         <div class="price-button">
-                          <a href="pricing.html" class="theme-btn"
+                          <a href="tel:082231316699" class="theme-btn"
                             >Mulai Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
@@ -1494,7 +1034,7 @@
                           </li>
                         </ul>
                         <div class="price-button">
-                          <a href="pricing.html" class="theme-btn"
+                          <a href="tel:082231316699" class="theme-btn"
                             >Mulai Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
@@ -1544,7 +1084,7 @@
                           </li>
                         </ul>
                         <div class="price-button">
-                          <a href="pricing.html" class="theme-btn"
+                          <a href="tel:082231316699" class="theme-btn"
                             >Mulai Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
@@ -1588,7 +1128,7 @@
                         </ul>
                         <div class="price-button">
                           <a href="pricing.html" class="theme-btn"
-                            >Berlangganan Sekarang
+                            >Langganan Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
                         </div>
@@ -1627,7 +1167,7 @@
                         </ul>
                         <div class="price-button">
                           <a href="pricing.html" class="theme-btn"
-                            >Berlangganan Sekarang
+                            >Langganan Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
                         </div>
@@ -1668,7 +1208,7 @@
                         </ul>
                         <div class="price-button">
                           <a href="pricing.html" class="theme-btn"
-                            >Berlangganan Sekarang
+                            >Langganan Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
                         </div>
@@ -1707,7 +1247,7 @@
                         </ul>
                         <div class="price-button">
                           <a href="pricing.html" class="theme-btn"
-                            >Berlangganan Sekarang
+                            >Langganan Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
                         </div>
@@ -1748,7 +1288,7 @@
                         </ul>
                         <div class="price-button">
                           <a href="pricing.html" class="theme-btn"
-                            >Berlangganan Sekarang
+                            >Langganan Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
                         </div>
@@ -1787,7 +1327,7 @@
                         </ul>
                         <div class="price-button">
                           <a href="pricing.html" class="theme-btn"
-                            >Berlangganan Sekarang
+                            >Langganan Sekarang
                             <i class="fa-regular fa-arrow-right-long"></i
                           ></a>
                         </div>
@@ -1801,7 +1341,6 @@
         </div>
       </section>
 
-      <!-- Testimonial Section Start -->
       <section class="testimonial-section fix section-padding">
         <div class="container">
           <div class="testimonial-wrapper">
@@ -1834,7 +1373,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                       </div>
-                      <p>15k+(reviews)</p>
+                      <p>90+(reviews)</p>
                     </div>
                   </div>
                   <div class="array-button wow fadeInUp" data-wow-delay=".5s">
@@ -1853,19 +1392,14 @@
                     <div class="swiper-slide">
                       <div class="testimonial-box-items">
                         <div class="icon">
-                          <img src="assets/img/kutip.png" alt="img" />
+                          <img src="assets/img/kutip.png" alt="img" 
+                          style="filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(200deg) brightness(50%) contrast(120%);">                     
                         </div>
                         <div class="testimonial-img">
                           <img src="assets/img/19.png" alt="img" />
                           <div class="shape-img">
-                            <img
-                              src="assets/img/testimonial/shape.png"
-                              alt="img"
-                              style="
-                                filter: hue-rotate(135deg) saturate(80%)
-                                  brightness(110%);
-                              "
-                            />
+                            <img src="assets/img/testimonial/shape.png" alt="img" 
+                               style="filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(65deg) brightness(120%) contrast(110%);">
                           </div>
                         </div>
                         <div class="content">
@@ -1891,19 +1425,14 @@
                     <div class="swiper-slide">
                       <div class="testimonial-box-items">
                         <div class="icon">
-                          <img src="assets/img/kutip.png" alt="img" />
+                          <img src="assets/img/kutip.png" alt="img" 
+                          style="filter: invert(20%) sepia(80%) saturate(500%) hue-rotate(200deg) brightness(50%) contrast(120%);">  
                         </div>
                         <div class="testimonial-img">
                           <img src="assets/img/18.png" alt="img" />
                           <div class="shape-img">
-                            <img
-                              src="assets/img/testimonial/shape.png"
-                              alt="img"
-                              style="
-                                filter: hue-rotate(135deg) saturate(80%)
-                                  brightness(110%);
-                              "
-                            />
+                            <img src="assets/img/testimonial/shape.png" alt="img" 
+                               style="filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(65deg) brightness(120%) contrast(110%);">
                           </div>
                         </div>
                         <div class="content">
@@ -1936,7 +1465,6 @@
     </div>
 
     <div id="kontakKami">
-      <!-- Contact Section Start -->
       <section class="contact-section fix section-padding">
         <div class="container">
           <div class="section-title-area">
@@ -2153,16 +1681,12 @@
       </div>
     </section>
 
-    <!-- Cta Section Start -->
     <section class="cta-section section-bg section-padding pb-0">
       <div class="rokect-shape float-bob-y">
         <img src="assets/img/icon-9.png" alt="img" class="w-50" />
       </div>
       <div class="container">
-        <div
-          class="cta-wrapper bg-cover"
-          style="background-image: url('assets/img/cta-bg.jpg')"
-        >
+        <div class="cta-wrapper bg-cover" style="background-image: url('assets/img/cta-bg.jpg');">
           <div
             class="cta-img wow img-custom-anim-left"
             data-wow-duration="1.5s"
@@ -2177,7 +1701,6 @@
       </div>
     </section>
 
-    <!-- Footer Section Start -->
     <section class="footer-section footer-bg fix">
       <div class="container">
         <div class="footer-widgets-wrapper">
@@ -2190,11 +1713,11 @@
                 <div class="widget-head">
                   <a href="index.html">
                     <img
-                      src="assets/img/dbn.svg"
+                      src="assets/img/dbn-hi.png"
                       alt="img"
                       style="
                         filter: drop-shadow(
-                          5px 5px 10px rgba(255, 255, 255, 0.5)
+                          5px 5px 10px rgba(0, 0, 0, 0.5)
                         );
                       "
                     />
@@ -2322,7 +1845,7 @@
                     />
                     <label class="form-check-label" for="flexCheckChecked">
                       I agree to the
-                      <a href="contact.html" style="color: rgba(5, 27, 0, 0.8)"
+                      <a href="contact.html" style="color: rgb(222, 233, 255) "
                         >Privacy Policy.</a
                       >
                     </label>
@@ -2339,7 +1862,7 @@
             class="footer-wrapper d-flex align-items-center justify-content-between"
           >
             <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-              © All Copyright 2024 by Digtek
+              © 2025 PT. DBN. All rights reserved.
             </p>
             <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
               <li>
@@ -2357,29 +1880,17 @@
       </div>
     </section>
 
-    <!--<< All JS Plugins >>-->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <!--<< Viewport Js >>-->
     <script src="assets/js/viewport.jquery.js"></script>
-    <!--<< Bootstrap Js >>-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!--<< Nice Select Js >>-->
     <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!--<< Waypoints Js >>-->
     <script src="assets/js/jquery.waypoints.js"></script>
-    <!--<< Counterup Js >>-->
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <!--<< Swiper Slider Js >>-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--<< MeanMenu Js >>-->
     <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <!--<< Magnific Popup Js >>-->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!--<< Wow Animation Js >>-->
     <script src="assets/js/wow.min.js"></script>
-    <!--<< Circle Progress Js >>-->
     <script src="assets/js/circle-progress.js"></script>
-    <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
