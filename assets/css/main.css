@@ -24,6 +24,12 @@ mark {
   border-radius: 5px;
 }
 
+@media (max-width: 425px) {
+  .logo-logo img{
+    width:80%;
+  }
+}
+
 .main-button {
   position: relative;
   display: flex;
@@ -65,6 +71,7 @@ mark {
     font-size: 14px;
   }
 }
+
 .main-button .arrow-btn {
   width: 51px;
   height: 51px;
