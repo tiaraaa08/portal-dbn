@@ -344,40 +344,53 @@ CSS TABLE OF CONTENTS
       $("mark").each(function () {
         let parent = $(this).parent();
         $(this).replaceWith($(this).text());
-        parent.html(parent.html());
+        parent.normalize();
       });
 
       if (query.length > 0) {
         let found = false;
 
-        $("body *").each(function () {
-          if ($(this).children().length === 0) {
-            let text = $(this).text();
+        function searchAndHighlight(node) {
+          if (node.nodeType === 3) {
+            let text = node.nodeValue;
             let regex = new RegExp(`(${query})`, "gi");
-        
-            if (text.toLowerCase().includes(query)) {
-              let newText = text.replace(regex, `<mark>$1</mark>`);
-              $(this).html(newText);
+
+            if (regex.test(text)) {
+              let newHTML = text.replace(regex, `<mark>$1</mark>`);
+              let span = document.createElement("span");
+              span.innerHTML = newHTML;
+
+              let parent = node.parentNode;
+              parent.replaceChild(span, node);
+
               found = true;
-        
               if (!foundElement) {
-                foundElement = $("mark").first();
+                foundElement = span.querySelector("mark");
               }
             }
+          } else if (
+            node.nodeType === 1 &&
+            node.tagName !== "SCRIPT" &&
+            node.tagName !== "STYLE"
+          ) {
+            Array.from(node.childNodes).forEach(searchAndHighlight);
           }
-        });        
+        }
+
+        searchAndHighlight(document.body);
 
         if (found) {
           $searchWrap.fadeOut(300, function () {
             $navSearch.add($searchClose).removeClass("open");
 
             setTimeout(() => {
-              foundElement
-                .get(0)
-                .scrollIntoView({ behavior: "smooth", block: "center" });
+              foundElement.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
             }, 300);
           });
-        } else{
+        } else {
           $notFoundText.removeClass("d-none");
         }
       }
